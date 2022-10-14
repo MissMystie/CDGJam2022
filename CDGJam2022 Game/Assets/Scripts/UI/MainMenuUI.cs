@@ -1,3 +1,4 @@
+using CDGJam;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,38 +6,49 @@ using UnityEngine.Events;
 
 public class MainMenuUI : MonoBehaviour
 {
-    public UnityEvent playBtn;
-    public UnityEvent controlsBtn;
-    public UnityEvent mainMenuBtn;
-    public UnityEvent quitBtn;
+    public GameObject mainMenuUI;
+    public GameObject controlsUI;
 
-    public GameObject mainMenuPanel;
-    public GameObject controlsPanel;
+    public string startScene;
+
+    public enum UIState { MAINMENU, CONTROLS }
+    public UIState state;
 
     void Start()
     {
-        
+        state = UIState.MAINMENU;
+
+        mainMenuUI.SetActive(true);
+        controlsUI.SetActive(false);
     }
 
-    public void Play()
+    public void PlayBtn()
     {
-        mainMenuPanel.SetActive(true);
-        controlsPanel.SetActive(false);
+        SceneLoader.LoadScene(startScene);
     }
 
     public void OpenControls()
     {
-        mainMenuPanel.SetActive(false);
-        controlsPanel.SetActive(true);
+        state = UIState.CONTROLS;
+
+        mainMenuUI.SetActive(false);
+        controlsUI.SetActive(true);
     }
 
-    public void OpenMainMenu()
+    public void CloseControls()
     {
-        controlsPanel.SetActive(false);
-        mainMenuPanel.SetActive(true);
+        state = UIState.MAINMENU;
+
+        controlsUI.SetActive(false);
+        mainMenuUI.SetActive(true);
     }
 
-    public void Quit()
+    public void OnPause()
+    {
+        CloseControls();
+    }
+
+    public void QuitBtn()
     {
         Debug.Log("Quitting the game...");
 
