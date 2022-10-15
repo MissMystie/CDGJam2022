@@ -60,8 +60,11 @@ namespace CDGJam
 
         public Vector2 GetAim(Vector2 aimPoint)
         {
+            //Debug.Log(input.currentControlScheme);
+
             if (input.currentControlScheme == keyboardControls)
             {
+                
                 Vector2 mousePos = Camera.main.ScreenToWorldPoint(aimAction.ReadValue<Vector2>());
                 return (mousePos - aimPoint).normalized;
             }

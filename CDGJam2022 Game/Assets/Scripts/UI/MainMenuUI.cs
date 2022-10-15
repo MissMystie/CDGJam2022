@@ -8,6 +8,7 @@ namespace CDGJam
 {
     public class MainMenuUI : MonoBehaviour
     {
+        public static PlayerControls controls;
 
         public GameObject mainMenuUI;
         public GameObject settingsUI;
@@ -20,6 +21,21 @@ namespace CDGJam
         public enum UIState { MAINMENU, SETTINGS, CONTROLS }
         public UIState state;
 
+        private void OnAwake()
+        {
+            controls = new PlayerControls();
+        }
+
+        private void OnEnable()
+        {
+            controls.Enable();
+        }
+
+        private void OnDisable()
+        {
+            controls.Disable();
+        }
+
         void Start()
         {
             state = UIState.MAINMENU;
@@ -27,7 +43,10 @@ namespace CDGJam
             mainMenuUI.SetActive(true);
             settingsUI.SetActive(false);
             controlsUI.SetActive(false);
+
+            controls.UI.Pause.performed += ctx => OnPause();
         }
+
 
         public void PlayBtn()
         {
@@ -44,10 +63,13 @@ namespace CDGJam
 
         public void CloseSettings()
         {
-            state = UIState.MAINMENU;
+            if (state == UIState.SETTINGS)
+            {
+                state = UIState.MAINMENU;
 
-            settingsUI.SetActive(false);
-            mainMenuUI.SetActive(true);
+                settingsUI.SetActive(false);
+                mainMenuUI.SetActive(true);
+            }
         }
 
         public void OpenControls()
@@ -60,15 +82,19 @@ namespace CDGJam
 
         public void CloseControls()
         {
-            state = UIState.MAINMENU;
+            if (state == UIState.CONTROLS)
+            {
+                state = UIState.MAINMENU;
 
-            controlsUI.SetActive(false);
-            mainMenuUI.SetActive(true);
+                controlsUI.SetActive(false);
+                mainMenuUI.SetActive(true);
+            }  
         }
 
         public void OnPause()
         {
-            CloseControls();
+            if (state == UIState.CONTROLS) CloseControls();
+            else if (state == UIState.SETTINGS) CloseSettings();
         }
 
         public void QuitBtn()

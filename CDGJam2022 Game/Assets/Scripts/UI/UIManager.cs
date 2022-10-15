@@ -8,7 +8,7 @@ namespace CDGJam
     public class UIManager : MonoBehaviour
     {
         public static UIManager Instance;
-        //public static PlayerControls controls;
+        public static PlayerControls controls;
 
         public GameObject hudUI;
         public GameObject pauseMenuUI;
@@ -34,9 +34,19 @@ namespace CDGJam
             }
 
             Instance = this;
-            //controls = new PlayerControls();
+            controls = new PlayerControls();
 
             player = LevelManager.Instance.player;
+        }
+
+        private void OnEnable()
+        {
+            controls.Enable();
+        }
+
+        private void OnDisable()
+        {
+            controls.Disable();
         }
 
         private void Start()
@@ -48,7 +58,7 @@ namespace CDGJam
             settingsUI.SetActive(false);
             controlsUI.SetActive(false);
 
-            //controls.UI.Pause.performed += ctx => OnPause();
+            controls.UI.Pause.performed += ctx => OnPause();
         }
 
         void OnPause()

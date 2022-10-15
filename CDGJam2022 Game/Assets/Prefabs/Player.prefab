@@ -273,5 +273,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   input: {fileID: 0}
   throwStrength: 5
-  seed: {fileID: 0}
-  throwPoint: {fileID: 0}
+  seed: {fileID: -3209596315791543171, guid: 6c2b63907f6c8e94b9d0280654874bf4, type: 3}
+  throwPoint: {fileID: 4502501508709390869}

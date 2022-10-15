@@ -17,7 +17,7 @@ namespace CDGJam
             input = GetComponent<VirtualController>();
         }
 
-        void OnThrow()
+        void OnShoot()
         {
             Rigidbody2D instance = GameObject.Instantiate(seed.gameObject, input.aimPoint.position, Quaternion.identity).GetComponent<Rigidbody2D>();
 
