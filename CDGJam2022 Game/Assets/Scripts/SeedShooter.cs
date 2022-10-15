@@ -42,6 +42,8 @@ namespace CDGJam
 
         void CycleSeed(int i)
         {
+            seedIndex += i;
+
             if (seedIndex < 0) seedIndex = seeds.Length - 1;
             else if (seedIndex >= seeds.Length) seedIndex = 0;
         }

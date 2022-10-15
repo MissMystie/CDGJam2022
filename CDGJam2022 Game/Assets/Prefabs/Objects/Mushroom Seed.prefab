@@ -138,4 +138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   growableTag: Growable
   breakPFX: {fileID: 7590188277774429583, guid: 46c68d3a66378964c8ab5513f3ea7a62, type: 3}
-  plant: {fileID: 6816364381090036784, guid: e76a0ae075c3e574d914fffd08dabe7d, type: 3}
+  plantGround: {fileID: 6816364381090036784, guid: e76a0ae075c3e574d914fffd08dabe7d, type: 3}
+  plantWall: {fileID: 6816364381090036784, guid: e76a0ae075c3e574d914fffd08dabe7d, type: 3}
+  plantCeil: {fileID: 6816364381090036784, guid: e76a0ae075c3e574d914fffd08dabe7d, type: 3}
+  rotateToTerrain: 0
