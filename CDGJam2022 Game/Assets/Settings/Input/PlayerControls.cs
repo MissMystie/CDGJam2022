@@ -46,7 +46,7 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Fire"",
+                    ""name"": ""Shoot"",
                     ""type"": ""Button"",
                     ""id"": ""188bd7fd-d13b-4188-9b4e-e44ee817f6d4"",
                     ""expectedControlType"": ""Button"",
@@ -160,7 +160,7 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Gamepad"",
-                    ""action"": ""Fire"",
+                    ""action"": ""Shoot"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -171,7 +171,7 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";KeyboardMouse"",
-                    ""action"": ""Fire"",
+                    ""action"": ""Shoot"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -182,7 +182,7 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Fire"",
+                    ""action"": ""Shoot"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -693,7 +693,7 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_Aim = m_Player.FindAction("Aim", throwIfNotFound: true);
-        m_Player_Fire = m_Player.FindAction("Fire", throwIfNotFound: true);
+        m_Player_Shoot = m_Player.FindAction("Shoot", throwIfNotFound: true);
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
@@ -769,7 +769,7 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_Player_Move;
     private readonly InputAction m_Player_Aim;
-    private readonly InputAction m_Player_Fire;
+    private readonly InputAction m_Player_Shoot;
     private readonly InputAction m_Player_Jump;
     public struct PlayerActions
     {
@@ -777,7 +777,7 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         public PlayerActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Player_Move;
         public InputAction @Aim => m_Wrapper.m_Player_Aim;
-        public InputAction @Fire => m_Wrapper.m_Player_Fire;
+        public InputAction @Shoot => m_Wrapper.m_Player_Shoot;
         public InputAction @Jump => m_Wrapper.m_Player_Jump;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
@@ -794,9 +794,9 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                 @Aim.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAim;
                 @Aim.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAim;
                 @Aim.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAim;
-                @Fire.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFire;
-                @Fire.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFire;
-                @Fire.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFire;
+                @Shoot.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShoot;
+                @Shoot.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShoot;
+                @Shoot.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShoot;
                 @Jump.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
                 @Jump.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
                 @Jump.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
@@ -810,9 +810,9 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                 @Aim.started += instance.OnAim;
                 @Aim.performed += instance.OnAim;
                 @Aim.canceled += instance.OnAim;
-                @Fire.started += instance.OnFire;
-                @Fire.performed += instance.OnFire;
-                @Fire.canceled += instance.OnFire;
+                @Shoot.started += instance.OnShoot;
+                @Shoot.performed += instance.OnShoot;
+                @Shoot.canceled += instance.OnShoot;
                 @Jump.started += instance.OnJump;
                 @Jump.performed += instance.OnJump;
                 @Jump.canceled += instance.OnJump;
@@ -955,7 +955,7 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
     {
         void OnMove(InputAction.CallbackContext context);
         void OnAim(InputAction.CallbackContext context);
-        void OnFire(InputAction.CallbackContext context);
+        void OnShoot(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
     }
     public interface IUIActions
