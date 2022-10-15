@@ -741,6 +741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  shooter: {fileID: 0}
 --- !u!4 &735753557
 Transform:
   m_ObjectHideFlags: 0
