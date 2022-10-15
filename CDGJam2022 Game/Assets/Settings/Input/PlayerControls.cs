@@ -62,6 +62,24 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""CycleLeft"",
+                    ""type"": ""Button"",
+                    ""id"": ""a47f11d1-dda6-41fc-abf0-d4fa5062fd82"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""CycleRight"",
+                    ""type"": ""Button"",
+                    ""id"": ""15e010cc-fcc0-4e2c-b883-90af5e833663"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -194,6 +212,39 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""KeyboardMouse"",
                     ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""dd5672b5-2207-495a-be8c-e7c37b72008a"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KeyboardMouse"",
+                    ""action"": ""CycleRight"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""43e15251-afba-477a-8e5e-c4413cc749a0"",
+                    ""path"": ""<Mouse>/middleButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KeyboardMouse"",
+                    ""action"": ""CycleRight"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""cc51c1ff-92ca-4524-9933-cfd83c069073"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KeyboardMouse"",
+                    ""action"": ""CycleLeft"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -684,6 +735,8 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         m_Player_Aim = m_Player.FindAction("Aim", throwIfNotFound: true);
         m_Player_Shoot = m_Player.FindAction("Shoot", throwIfNotFound: true);
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
+        m_Player_CycleLeft = m_Player.FindAction("CycleLeft", throwIfNotFound: true);
+        m_Player_CycleRight = m_Player.FindAction("CycleRight", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Pause = m_UI.FindAction("Pause", throwIfNotFound: true);
@@ -760,6 +813,8 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Aim;
     private readonly InputAction m_Player_Shoot;
     private readonly InputAction m_Player_Jump;
+    private readonly InputAction m_Player_CycleLeft;
+    private readonly InputAction m_Player_CycleRight;
     public struct PlayerActions
     {
         private @PlayerControls m_Wrapper;
@@ -768,6 +823,8 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         public InputAction @Aim => m_Wrapper.m_Player_Aim;
         public InputAction @Shoot => m_Wrapper.m_Player_Shoot;
         public InputAction @Jump => m_Wrapper.m_Player_Jump;
+        public InputAction @CycleLeft => m_Wrapper.m_Player_CycleLeft;
+        public InputAction @CycleRight => m_Wrapper.m_Player_CycleRight;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -789,6 +846,12 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                 @Jump.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
                 @Jump.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
                 @Jump.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
+                @CycleLeft.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCycleLeft;
+                @CycleLeft.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCycleLeft;
+                @CycleLeft.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCycleLeft;
+                @CycleRight.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCycleRight;
+                @CycleRight.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCycleRight;
+                @CycleRight.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCycleRight;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -805,6 +868,12 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                 @Jump.started += instance.OnJump;
                 @Jump.performed += instance.OnJump;
                 @Jump.canceled += instance.OnJump;
+                @CycleLeft.started += instance.OnCycleLeft;
+                @CycleLeft.performed += instance.OnCycleLeft;
+                @CycleLeft.canceled += instance.OnCycleLeft;
+                @CycleRight.started += instance.OnCycleRight;
+                @CycleRight.performed += instance.OnCycleRight;
+                @CycleRight.canceled += instance.OnCycleRight;
             }
         }
     }
@@ -946,6 +1015,8 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         void OnAim(InputAction.CallbackContext context);
         void OnShoot(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
+        void OnCycleLeft(InputAction.CallbackContext context);
+        void OnCycleRight(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

@@ -30,9 +30,20 @@ namespace CDGJam
             instance.velocity = throwV;
         }
 
+        void OnCycleLeft()
+        {
+            CycleSeed(-1);
+        }
+
+        void OnCycleRight()
+        {
+            CycleSeed(1);
+        }
+
         void CycleSeed(int i)
         {
-            seedIndex += i;
+            if (seedIndex < 0) seedIndex = seeds.Length - 1;
+            else if (seedIndex >= seeds.Length) seedIndex = 0;
         }
     }
 
