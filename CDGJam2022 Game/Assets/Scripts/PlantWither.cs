@@ -20,11 +20,8 @@ namespace CDGJam {
 
         IEnumerator Wither() {
             yield return new WaitForSeconds(_witherTime);
-            Destroy(this.gameObject);
-        }
-
-        private void OnDestroy() {
             _shotFrom.RechargeSeed(_seedIndex);
+            Destroy(this.gameObject);
         }
     }
 }
