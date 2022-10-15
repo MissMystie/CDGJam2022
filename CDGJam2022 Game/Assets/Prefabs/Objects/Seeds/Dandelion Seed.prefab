@@ -142,6 +142,6 @@ MonoBehaviour:
   emitter: {fileID: 0}
   seedIndex: 0
   rotateToTerrain: 0
-  plantGround: {fileID: 6816364381090036784, guid: e76a0ae075c3e574d914fffd08dabe7d, type: 3}
+  plantGround: {fileID: 8408023265970699684, guid: 75b2faf5a07a94c48bd853053dc3d4a0, type: 3}
   plantWall: {fileID: 0}
   plantCeil: {fileID: 0}

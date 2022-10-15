@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e3bffa98b11d7304a9a8daf2d1ed4104
+guid: 3a1822525bcb53846ad824ba9956766c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -140,64 +140,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Plants_Vine
+      name: Thorns
       rect:
         serializedVersion: 2
-        x: 43
-        y: 71
-        width: 212
-        height: 1467
-      alignment: 9
-      pivot: {x: 0.5, y: 0.98}
-      border: {x: 0, y: 0, z: 0, w: 0}
+        x: 0
+        y: 0
+        width: 1400
+        height: 284
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 200, y: 0, z: 200, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04c6612124d001d47a3946b3f6a0d889
-      internalID: 640041334
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Plants_Mushroom
-      rect:
-        serializedVersion: 2
-        x: 267
-        y: 1184
-        width: 423
-        height: 353
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3382fcce788dbc449b0858096153491a
-      internalID: -1438443965
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Plants_Dandelion
-      rect:
-        serializedVersion: 2
-        x: 761
-        y: 28
-        width: 1322
-        height: 1521
-      alignment: 9
-      pivot: {x: 0.75, y: 0.05}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 236f7d6285c6bbd4abb61ca116b15a97
-      internalID: 1758583985
+      spriteID: 180f306fe7046ab41a223c8d977a4c73
+      internalID: 6758919
       vertices: []
       indices: 
       edges: []
@@ -213,9 +171,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Plants_Dandelion: 1758583985
-      Plants_Vine: 640041334
-      Plants_Mushroom: -1438443965
+      Thorns_L: 456779774
+      Thorns_R: -1076354464
+      Thorns: 6758919
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

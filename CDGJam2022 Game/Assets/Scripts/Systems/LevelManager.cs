@@ -7,9 +7,10 @@ namespace CDGJam
     public class LevelManager : MonoBehaviour
     {
         public static LevelManager Instance;
+        public Vector2 checkpoint;
+        public float respawnTime = 0.5f;
 
-        public GameObject player;
-        public SeedShooter shooter;
+        public GameObject player {get; private set;}
 
         void Awake()
         {
@@ -23,14 +24,35 @@ namespace CDGJam
             Instance = this;
 
             player = GameObject.FindGameObjectWithTag("Player");
-            player.GetComponent<SeedShooter>();
 
             if (!player)
             {
-                Debug.LogWarning("GameManager: No player found", this);
+                Debug.LogWarning("LevelManager: No player found", this);
                 return;
             }
-
         }
+
+        private void Start()
+        {
+            checkpoint = player.transform.position;
+        }
+
+        public void RespawnPlayer()
+        {
+            StartCoroutine(RespawnCoroutine());
+        }
+
+        public IEnumerator RespawnCoroutine()
+        {
+            player.gameObject.SetActive(false); //Disables the player object
+
+            yield return new WaitForSeconds(respawnTime);
+
+            player.transform.position = checkpoint;
+            player.gameObject.SetActive(true); //Enables the player object
+
+            Debug.Log("Player respawned!");
+        }
+
     }
 }

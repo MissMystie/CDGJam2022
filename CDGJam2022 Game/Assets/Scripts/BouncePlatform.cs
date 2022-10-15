@@ -1,26 +1,39 @@
 ﻿using UnityEngine;
 
-namespace CDGJam.Assets.Scripts {
-    public class BouncePlatform : MonoBehaviour {
+namespace CDGJam.Assets.Scripts
+{
+    public class BouncePlatform : MonoBehaviour
+    {
 
+        [SerializeField] private LayerMask mask;
         [SerializeField] float _bounceFactor = 1.00f;
         [SerializeField] float _bounceForceMax = 25f;
         [SerializeField] float _bounceForceMin = 10f;
 
-        private void OnTriggerEnter2D(Collider2D collision) {
-            if (collision.gameObject.TryGetComponent<PlayerController>(out PlayerController player)) {
-                float riseVelocity = Mathf.Abs(player.rb.velocity.y * _bounceFactor);
-                
+        private void OnTriggerEnter2D(Collider2D col)
+        {
+
+            if (col.gameObject.IsInLayerMask(mask))
+            {
+                Rigidbody2D rb = col.gameObject.GetComponent<Rigidbody2D>();
+
+                float bounceStrength = Mathf.Abs(rb.velocity.magnitude * _bounceFactor);
+
                 // Clamp.
-                if(riseVelocity > _bounceForceMax) {
-                    riseVelocity = _bounceForceMax;
+                if (bounceStrength > _bounceForceMax)
+                {
+                    bounceStrength = _bounceForceMax;
                 }
-                else if(riseVelocity < _bounceForceMin) {
-                    riseVelocity = _bounceForceMin;
+                else if (bounceStrength < _bounceForceMin)
+                {
+                    bounceStrength = _bounceForceMin;
                 }
-                
-                player.rb.velocity = new Vector2(player.rb.velocity.x, riseVelocity);
+
+                Debug.Log(transform.up);
+                rb.velocity = transform.up * bounceStrength;
+                //player.rb.velocity = new Vector2(player.rb.velocity.x, riseVelocity);
             }
+
         }
     }
 }

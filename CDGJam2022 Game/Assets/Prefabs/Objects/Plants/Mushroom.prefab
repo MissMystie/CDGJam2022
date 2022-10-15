@@ -157,6 +157,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d1345466bc0035468144d392b8fd303, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mask:
+    serializedVersion: 2
+    m_Bits: 64
   _bounceFactor: 1
   _bounceForceMax: 25
   _bounceForceMin: 10
