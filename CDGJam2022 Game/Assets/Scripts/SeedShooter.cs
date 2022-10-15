@@ -30,12 +30,12 @@ namespace CDGJam
                 return;
             }
 
-            Rigidbody2D instance = GameObject.Instantiate(seeds[seedIndex].seed.gameObject, input.aimPoint.position, Quaternion.identity).GetComponent<Rigidbody2D>();
-            instance.GetComponent<Seed>().PassParent(this, seedIndex);
+            Seed instance = GameObject.Instantiate(seeds[seedIndex].seed.gameObject, input.aimPoint.position, Quaternion.identity).GetComponent<Seed>();
+            instance.SetEmitter(this);
             seeds[seedIndex].charges--;
 
             Vector2 throwV = input.aim.normalized * throwStrength;
-            instance.velocity = throwV;
+            instance.rb.velocity = throwV;
         }
 
         void OnCycleLeft()

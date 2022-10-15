@@ -11,28 +11,34 @@ namespace CDGJam
     {
         public const string growableTag = "Growable";
 
+        public Rigidbody2D rb;
+
         public GameObject breakPFX;
         public PlantWither plant;
-        public SeedShooter _shotFrom;
+        public SeedShooter emitter;
         public int seedIndex;
+        public bool rotateToTerrain;
 
-        public void PassParent(SeedShooter shooter, int seedIndex) {
-            _shotFrom = shooter;
-            this.seedIndex = seedIndex;
-        }
+        [Space]
+
         public GameObject plantGround;
         public GameObject plantWall;
         public GameObject plantCeil;
 
-        public bool rotateToTerrain;
+        public void Awake()
+        {
+            rb = GetComponent<Rigidbody2D>();
+        }
+
+        public void SetEmitter(SeedShooter newEmitter)
+        {
+            emitter = newEmitter;
+        }
 
         private void OnCollisionEnter2D(Collision2D col)
         {
             if(col.gameObject.tag == growableTag)
             {
-                PlantWither newPlant = Instantiate(plant, transform.position, Quaternion.identity).GetComponent<PlantWither>();
-                newPlant.PassParent(_shotFrom, seedIndex);  
-
                 Vector2 impactPoint = col.collider.ClosestPoint(transform.position);
                 float angle = Vector2.Angle(Vector2.up, (Vector2)transform.position - impactPoint);
 
@@ -43,12 +49,13 @@ namespace CDGJam
                 else if (angle < 135) plant = plantWall;
                 else plant = plantCeil;
 
-                GameObject instance = GameObject.Instantiate(plant, impactPoint, rotateToTerrain? Quaternion.Euler(0,0,angle) : Quaternion.identity);
+                PlantWither instance = GameObject.Instantiate(plant, impactPoint, rotateToTerrain? Quaternion.Euler(0,0,angle) : Quaternion.identity).GetComponent<PlantWither>();
+                instance.SetEmitter(emitter);
             }
             else 
             {
                 GameObject.Instantiate(breakPFX, transform.position, Quaternion.identity);
-                _shotFrom.RechargeSeed(seedIndex);
+                emitter.RechargeSeed(seedIndex);
             }
 
             Destroy(gameObject);

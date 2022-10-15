@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4985790f23e9ce246a0a99bfde862aee
+guid: a41bbd4d4f0e9cf4d9fc4da7f9d717d9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -140,13 +140,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Seed_Dandelion
+      name: Dirt_TopL
       rect:
         serializedVersion: 2
-        x: 13
-        y: 28
-        width: 115
-        height: 143
+        x: 0
+        y: 600
+        width: 200
+        height: 200
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,20 +154,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c797ab94d5ae23d47bd2456e18418646
-      internalID: -754545053
+      spriteID: 3fe99c4d13cda3f46bfef054f87f36a5
+      internalID: -1074883145
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Seeds_Vine
+      name: Dirt_Top
       rect:
         serializedVersion: 2
-        x: 129
-        y: 18
-        width: 171
-        height: 169
+        x: 200
+        y: 600
+        width: 200
+        height: 200
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,20 +175,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1bbce3c291eac849bbe869eb7996332
-      internalID: -1541477278
+      spriteID: ffdf2ac889fc1b4469723731d57ff0ad
+      internalID: 1647868280
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Seeds_Mushroom
+      name: Dirt_TopR
       rect:
         serializedVersion: 2
-        x: 343
-        y: 24
-        width: 137
-        height: 139
+        x: 400
+        y: 600
+        width: 200
+        height: 200
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,8 +196,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1b31d0007c020b4dadce0137d047f0d
-      internalID: 331987324
+      spriteID: 839ea0bdd18f5c8408555ad32ce2a9e8
+      internalID: 1786065999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_BotL
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff70dfe0cf99da4a9879c6f6b485e37
+      internalID: -1858769132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_BotR
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee22b2de84268046b7defe3ae4ae7c5
+      internalID: -1355037159
       vertices: []
       indices: 
       edges: []
@@ -213,9 +255,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Seeds_Mushroom: 331987324
-      Seed_Dandelion: -754545053
-      Seeds_Vine: -1541477278
+      Dirt_BotL: -1858769132
+      Dirt_Down: -593786410
+      Dirt_BotR: -1355037159
+      Dirt_Top: 1647868280
+      Dirt_Left: -44758190
+      Dirt_TopL: -1074883145
+      Dirt_TopR: 1786065999
+      Terrain_Basic_Brown_4: -239806368
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
