@@ -88,6 +88,54 @@ MonoBehaviour:
   - Name: Desktop
     Value: 494
   Exists: 1
+--- !u!114 &-4480889244856799212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/main_menu_bgm
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/main_menu_bgm
+  Guid:
+    Data1: 772820776
+    Data2: 1140082591
+    Data3: 789920132
+    Data4: 345024758
+  Banks:
+  - {fileID: 1284365457180422585}
+  - {fileID: 7588597624666987614}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 128052
+--- !u!114 &-2233542246036241801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD Project/Banks/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638013862552440922
+  FileSizes:
+  - Name: Desktop
+    Value: 928
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,19 +149,39 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 3489753137729003502}
-  - {fileID: -6396287061291618613}
-  - {fileID: -7858836174929696121}
-  - {fileID: -5488805830107453719}
+  - {fileID: -2233542246036241801}
+  - {fileID: 1284365457180422585}
+  - {fileID: 7588597624666987614}
+  - {fileID: 6918643888762772938}
   EditorEvents:
-  - {fileID: -7754137488144800059}
+  - {fileID: -4480889244856799212}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -6396287061291618613}
+  - {fileID: 1284365457180422585}
   StringsBanks:
-  - {fileID: 3489753137729003502}
-  cacheTime: 638013454919415368
+  - {fileID: -2233542246036241801}
+  cacheTime: 638013862552525995
   cacheVersion: 131593
+--- !u!114 &1284365457180422585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD Project/Banks/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638013862552435918
+  FileSizes:
+  - Name: Desktop
+    Value: 1480256
+  Exists: 1
 --- !u!114 &3489753137729003502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,4 +201,44 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 928
+  Exists: 1
+--- !u!114 &6918643888762772938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD Project/Banks/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638013862552525995
+  FileSizes:
+  - Name: Desktop
+    Value: 494
+  Exists: 1
+--- !u!114 &7588597624666987614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD Project/Banks/Desktop/Music.bank
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 638013862552520991
+  FileSizes:
+  - Name: Desktop
+    Value: 1479424
   Exists: 1
