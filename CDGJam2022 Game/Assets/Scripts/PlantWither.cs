@@ -19,15 +19,9 @@ namespace CDGJam {
         }
 
         IEnumerator Wither() {
-<<<<<<< Updated upstream
-            yield return new WaitForSeconds(_witherTime);
-            _shotFrom.RechargeSeed(_seedIndex);
-            Destroy(this.gameObject);
-=======
             yield return new WaitForSeconds(witherTime);
             if(emitter != null) emitter.RechargeSeed(seedIndex);
             Destroy(gameObject);
->>>>>>> Stashed changes
         }
     }
 }
