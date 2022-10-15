@@ -12,13 +12,16 @@ namespace CDGJam
 
         public GameObject hudUI;
         public GameObject pauseMenuUI;
+        public GameObject settingsUI;
         public GameObject controlsUI;
+
+        [Space]
 
         public GameObject player;
 
         public bool isPaused = false;
 
-        public enum UIState { HUD, PAUSE, CONTROLS }
+        public enum UIState { HUD, PAUSE, SETTINGS, CONTROLS }
         public UIState state;
 
         void Awake()
@@ -36,22 +39,13 @@ namespace CDGJam
             player = LevelManager.Instance.player;
         }
 
-        private void OnEnable()
-        {
-            //controls.UI.Enable();
-        }
-
-        private void OnDisable()
-        {
-            //controls.UI.Disable();
-        }
-
         private void Start()
         {
             state = UIState.HUD;
 
             hudUI.SetActive(true);
             pauseMenuUI.SetActive(false);
+            settingsUI.SetActive(false);
             controlsUI.SetActive(false);
 
             //controls.UI.Pause.performed += ctx => OnPause();
@@ -66,6 +60,9 @@ namespace CDGJam
                     break;
                 case UIState.PAUSE:
                     Unpause();
+                    break;
+                case UIState.SETTINGS:
+                    CloseSettings();
                     break;
                 case UIState.CONTROLS:
                     CloseControls();
@@ -91,6 +88,22 @@ namespace CDGJam
             pauseMenuUI.SetActive(false);
             controlsUI.SetActive(false);
             isPaused = false;
+        }
+
+        public void OpenSettings()
+        {
+            state = UIState.SETTINGS;
+
+            pauseMenuUI.SetActive(false);
+            settingsUI.SetActive(true);
+        }
+
+        public void CloseSettings()
+        {
+            state = UIState.PAUSE;
+
+            settingsUI.SetActive(false);
+            pauseMenuUI.SetActive(true);
         }
 
         public void OpenControls()

@@ -19,6 +19,11 @@ namespace CDGJam
             UIManager.Instance.Pause();
         }
 
+        public void SettingsBtn()
+        {
+            UIManager.Instance.OpenSettings();
+        }
+
         public void ControlsBtn()
         {
             UIManager.Instance.OpenControls();

@@ -4,61 +4,85 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class MainMenuUI : MonoBehaviour
+namespace CDGJam
 {
-    public GameObject mainMenuUI;
-    public GameObject controlsUI;
-
-    public string startScene;
-
-    public enum UIState { MAINMENU, CONTROLS }
-    public UIState state;
-
-    void Start()
+    public class MainMenuUI : MonoBehaviour
     {
-        state = UIState.MAINMENU;
 
-        mainMenuUI.SetActive(true);
-        controlsUI.SetActive(false);
-    }
+        public GameObject mainMenuUI;
+        public GameObject settingsUI;
+        public GameObject controlsUI;
 
-    public void PlayBtn()
-    {
-        SceneLoader.LoadScene(startScene);
-    }
+        [Space]
 
-    public void OpenControls()
-    {
-        state = UIState.CONTROLS;
+        public string startScene;
 
-        mainMenuUI.SetActive(false);
-        controlsUI.SetActive(true);
-    }
+        public enum UIState { MAINMENU, SETTINGS, CONTROLS }
+        public UIState state;
 
-    public void CloseControls()
-    {
-        state = UIState.MAINMENU;
+        void Start()
+        {
+            state = UIState.MAINMENU;
 
-        controlsUI.SetActive(false);
-        mainMenuUI.SetActive(true);
-    }
+            mainMenuUI.SetActive(true);
+            settingsUI.SetActive(false);
+            controlsUI.SetActive(false);
+        }
 
-    public void OnPause()
-    {
-        CloseControls();
-    }
+        public void PlayBtn()
+        {
+            SceneLoader.LoadScene(startScene);
+        }
 
-    public void QuitBtn()
-    {
-        Debug.Log("Quitting the game...");
+        public void OpenSettings()
+        {
+            state = UIState.SETTINGS;
 
-        #if UNITY_EDITOR
+            mainMenuUI.SetActive(false);
+            settingsUI.SetActive(true);
+        }
 
-        if (UnityEditor.EditorApplication.isPlaying == true)
-            UnityEditor.EditorApplication.isPlaying = false;
+        public void CloseSettings()
+        {
+            state = UIState.MAINMENU;
 
-        #endif
+            settingsUI.SetActive(false);
+            mainMenuUI.SetActive(true);
+        }
 
-        Application.Quit();
+        public void OpenControls()
+        {
+            state = UIState.CONTROLS;
+
+            mainMenuUI.SetActive(false);
+            controlsUI.SetActive(true);
+        }
+
+        public void CloseControls()
+        {
+            state = UIState.MAINMENU;
+
+            controlsUI.SetActive(false);
+            mainMenuUI.SetActive(true);
+        }
+
+        public void OnPause()
+        {
+            CloseControls();
+        }
+
+        public void QuitBtn()
+        {
+            Debug.Log("Quitting the game...");
+
+#if UNITY_EDITOR
+
+            if (UnityEditor.EditorApplication.isPlaying == true)
+                UnityEditor.EditorApplication.isPlaying = false;
+
+#endif
+
+            Application.Quit();
+        }
     }
 }
