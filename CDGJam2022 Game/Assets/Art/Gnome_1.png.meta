@@ -107,12 +107,12 @@ TextureImporter:
       name: Gnome_1_0
       rect:
         serializedVersion: 2
-        x: 26
+        x: 24
         y: 171
         width: 285
         height: 530
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5195233, y: 0.18854797}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -132,8 +132,8 @@ TextureImporter:
         y: 409
         width: 182
         height: 292
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.4949044, y: 0.052200526}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -150,11 +150,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 37
-        y: 12
+        y: 11
         width: 101
         height: 138
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.7019985, y: 0.8964784}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -174,8 +174,8 @@ TextureImporter:
         y: 11
         width: 102
         height: 141
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.33634874, y: 0.8880428}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
