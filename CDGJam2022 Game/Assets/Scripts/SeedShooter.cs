@@ -17,6 +17,7 @@ namespace CDGJam
 
         public int seedIndex = 0;
 
+
         void Awake()
         {
             input = GetComponent<VirtualController>();
@@ -24,7 +25,14 @@ namespace CDGJam
 
         void OnShoot()
         {
+            if(seeds[seedIndex].charges <= 0) {
+                // text pop-up?
+                return;
+            }
+
             Rigidbody2D instance = GameObject.Instantiate(seeds[seedIndex].seed.gameObject, input.aimPoint.position, Quaternion.identity).GetComponent<Rigidbody2D>();
+            instance.GetComponent<Seed>().PassParent(this, seedIndex);
+            seeds[seedIndex].charges--;
 
             Vector2 throwV = input.aim.normalized * throwStrength;
             instance.velocity = throwV;
@@ -45,6 +53,11 @@ namespace CDGJam
             if (seedIndex < 0) seedIndex = seeds.Length - 1;
             else if (seedIndex >= seeds.Length) seedIndex = 0;
         }
+
+
+        public void RechargeSeed(int seedIndex) {
+            seeds[seedIndex].charges++;
+        }
     }
 
     [Serializable]
@@ -52,7 +65,7 @@ namespace CDGJam
     {
         public string name;
         public Sprite icon;
-        public Rigidbody2D seed;
+        public Seed seed;
         public int charges;
     }
 }
