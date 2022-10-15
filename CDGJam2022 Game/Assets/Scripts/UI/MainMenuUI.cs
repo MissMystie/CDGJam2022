@@ -21,7 +21,7 @@ namespace CDGJam
         public enum UIState { MAINMENU, SETTINGS, CONTROLS }
         public UIState state;
 
-        private void OnAwake()
+        private void Awake()
         {
             controls = new PlayerControls();
         }

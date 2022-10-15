@@ -2419,11 +2419,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4804103662933304015, guid: d23afaafd2796d2498bc557a10e0aa88, type: 3}
       propertyPath: m_Name
-      value: Settings UI
+      value: Settings Menu
       objectReference: {fileID: 0}
     - target: {fileID: 4804103662933304015, guid: d23afaafd2796d2498bc557a10e0aa88, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4804103662933304048, guid: d23afaafd2796d2498bc557a10e0aa88, type: 3}
       propertyPath: m_Pivot.x
@@ -2520,6 +2520,10 @@ PrefabInstance:
     - target: {fileID: 5025200849152236732, guid: d23afaafd2796d2498bc557a10e0aa88, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: CDGJam.MainMenuUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903622219840985581, guid: d23afaafd2796d2498bc557a10e0aa88, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d23afaafd2796d2498bc557a10e0aa88, type: 3}

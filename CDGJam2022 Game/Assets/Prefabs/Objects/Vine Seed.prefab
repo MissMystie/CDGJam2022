@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -3209596315791543171}
   - component: {fileID: 146130435936245487}
   m_Layer: 7
-  m_Name: Seed
+  m_Name: Vine Seed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8867924, g: 0.77089477, b: 0.17289655, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -137,4 +137,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   growableTag: Growable
+  breakPFX: {fileID: 7590188277774429583, guid: 46c68d3a66378964c8ab5513f3ea7a62, type: 3}
   plant: {fileID: 6816364381090036784, guid: e76a0ae075c3e574d914fffd08dabe7d, type: 3}
