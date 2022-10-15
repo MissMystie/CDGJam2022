@@ -9,6 +9,7 @@ namespace CDGJam
         public static LevelManager Instance;
 
         public GameObject player;
+        public SeedShooter shooter;
 
         void Awake()
         {
@@ -22,6 +23,7 @@ namespace CDGJam
             Instance = this;
 
             player = GameObject.FindGameObjectWithTag("Player");
+            player.GetComponent<SeedShooter>();
 
             if (!player)
             {

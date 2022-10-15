@@ -34,7 +34,6 @@ namespace CDGJam
                 else plant = plantCeil;
 
                 GameObject instance = GameObject.Instantiate(plant, impactPoint, rotateToTerrain? Quaternion.Euler(0,0,angle) : Quaternion.identity);
-                
             }
             else
             {
