@@ -38,6 +38,8 @@ namespace CDGJam
         public Collider2D climbableCol;
         public string climbableTag = "Climbable";
 
+        private float gravityScale;
+
         [Header("Feedback")]
 
         public MMFeedbacks jumpFX;
@@ -55,6 +57,8 @@ namespace CDGJam
             input = GetComponent<VirtualController>();
             rb = GetComponent<Rigidbody2D>();
             anim = GetComponentInChildren<Animator>();
+
+            gravityScale = rb.gravityScale;
         }
 
         void Update()
@@ -115,14 +119,15 @@ namespace CDGJam
         public void StartClimbing()
         {
             isClimbing = true;
-            rb.isKinematic = true;
+            rb.velocity = Vector2.zero;
+            rb.gravityScale = 0;
             transform.position = new Vector2(climbableCol.bounds.center.x, transform.position.y);
         }
 
         public void StopClimbing()
         {
             isClimbing = false;
-            rb.isKinematic = false;
+            rb.gravityScale = gravityScale;
         }
 
         public void Animate() {

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3608884536571765929}
   - component: {fileID: 3608884536571765928}
   - component: {fileID: 3608884536571765927}
+  - component: {fileID: 2284736738437016066}
   m_Layer: 8
   m_Name: Vine
   m_TagString: Climbable
@@ -111,3 +112,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2284736738437016066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3608884536571765926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa181eacfe98492439ad12991de03540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
