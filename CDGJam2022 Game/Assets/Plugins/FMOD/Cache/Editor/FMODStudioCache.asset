@@ -1,32 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9148238075542931466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/mushroom_bounce_sfx
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/mushroom_bounce_sfx
-  Guid:
-    Data1: -33115310
-    Data2: 1248629971
-    Data3: 1070250389
-    Data4: 757874539
-  Banks:
-  - {fileID: -5205527657298278562}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 259
 --- !u!114 &-9062439330285723674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,10 +15,10 @@ MonoBehaviour:
   Path: FMOD Project/Banks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638015428228162621
+  lastModified: 638015454506593137
   FileSizes:
   - Name: Desktop
-    Value: 2148
+    Value: 2180
   Exists: 1
 --- !u!114 &-8692123709609434908
 MonoBehaviour:
@@ -155,33 +128,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
---- !u!114 &-6610153443704519948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/misc/lose_sfx
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/misc/lose_sfx
-  Guid:
-    Data1: -810495795
-    Data2: 1136517863
-    Data3: -176831560
-    Data4: 487996874
-  Banks:
-  - {fileID: -5205527657298278562}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1903
 --- !u!114 &-6115381155411828865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,10 +170,10 @@ MonoBehaviour:
   Path: FMOD Project/Banks/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638015428229163480
+  lastModified: 638015454508967606
   FileSizes:
   - Name: Desktop
-    Value: 225408
+    Value: 4409152
   Exists: 1
 --- !u!114 &-4769400627418906435
 MonoBehaviour:
@@ -282,7 +228,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 249
+  Length: 497
 --- !u!114 &-3667102880489690087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -298,10 +244,10 @@ MonoBehaviour:
   Path: FMOD Project/Banks/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638015428228853214
+  lastModified: 638015454507501899
   FileSizes:
   - Name: Desktop
-    Value: 10170080
+    Value: 6280256
   Exists: 1
 --- !u!114 &-3638452820536009960
 MonoBehaviour:
@@ -384,33 +330,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 12500
---- !u!114 &-1913964498875379601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BGM/garden_ambience_dead
-  m_EditorClassIdentifier: 
-  Path: event:/BGM/garden_ambience_dead
-  Guid:
-    Data1: 206203626
-    Data2: 1315167908
-    Data3: 927590314
-    Data4: -989591322
-  Banks:
-  - {fileID: -3667102880489690087}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 129501
 --- !u!114 &-1198076996014140121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -493,33 +412,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 162507
---- !u!114 &-147017302056680736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BGM/garden_ambience
-  m_EditorClassIdentifier: 
-  Path: event:/BGM/garden_ambience
-  Guid:
-    Data1: 92806615
-    Data2: 1124788796
-    Data3: 1329949582
-    Data4: 1180495852
-  Banks:
-  - {fileID: -3667102880489690087}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 164975
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -558,18 +450,72 @@ MonoBehaviour:
   - {fileID: -8664756834520378547}
   - {fileID: -6115381155411828865}
   - {fileID: 3969424417374436234}
-  - {fileID: -9148238075542931466}
-  - {fileID: 4379724724720834554}
-  - {fileID: -6610153443704519948}
-  - {fileID: -147017302056680736}
-  - {fileID: -1913964498875379601}
+  - {fileID: 965738657857906022}
+  - {fileID: 2110790311891217259}
+  - {fileID: 809045394648452942}
+  - {fileID: 9070766203815908214}
+  - {fileID: 6831125926998877778}
   EditorParameters: []
   MasterBanks:
   - {fileID: 5957030141078565558}
   StringsBanks:
   - {fileID: -9062439330285723674}
-  cacheTime: 638015428229163480
+  cacheTime: 638015454508967606
   cacheVersion: 131593
+--- !u!114 &809045394648452942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Plants/mushroom_bounce_sfx
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Plants/mushroom_bounce_sfx
+  Guid:
+    Data1: -33115310
+    Data2: 1248629971
+    Data3: 1070250389
+    Data4: 757874539
+  Banks:
+  - {fileID: -5205527657298278562}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 259
+--- !u!114 &965738657857906022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Misc/garden_ambiance_sfx
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Misc/garden_ambiance_sfx
+  Guid:
+    Data1: -1163519723
+    Data2: 1079062588
+    Data3: -25960289
+    Data4: 240118975
+  Banks:
+  - {fileID: -5205527657298278562}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 163977
 --- !u!114 &1929056887830574983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -597,6 +543,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 324
+--- !u!114 &2110790311891217259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Misc/dead_garden_ambiance_sfx
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Misc/dead_garden_ambiance_sfx
+  Guid:
+    Data1: -288989901
+    Data2: 1329939052
+    Data3: 1143806357
+    Data4: 674165247
+  Banks:
+  - {fileID: -5205527657298278562}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 128504
 --- !u!114 &3969424417374436234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -678,33 +651,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1191
---- !u!114 &4379724724720834554
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/misc/water_flowing_sfx
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/misc/water_flowing_sfx
-  Guid:
-    Data1: -719012968
-    Data2: 1200730326
-    Data3: -703035519
-    Data4: 1285524015
-  Banks:
-  - {fileID: -5205527657298278562}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &5133115621562205448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -727,7 +673,7 @@ MonoBehaviour:
   - {fileID: -5205527657298278562}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
@@ -747,11 +693,38 @@ MonoBehaviour:
   Path: FMOD Project/Banks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638015428228142603
+  lastModified: 638015454506575376
   FileSizes:
   - Name: Desktop
-    Value: 1456128
+    Value: 1456384
   Exists: 1
+--- !u!114 &6831125926998877778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Misc/lose_sfx
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Misc/lose_sfx
+  Guid:
+    Data1: -810495795
+    Data2: 1136517863
+    Data3: -176831560
+    Data4: 487996874
+  Banks:
+  - {fileID: -5205527657298278562}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1903
 --- !u!114 &6911737554861123907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -806,3 +779,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 108721
+--- !u!114 &9070766203815908214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Misc/water_flowing_sfx
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Misc/water_flowing_sfx
+  Guid:
+    Data1: -719012968
+    Data2: 1200730326
+    Data3: -703035519
+    Data4: 1285524015
+  Banks:
+  - {fileID: -5205527657298278562}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 14264

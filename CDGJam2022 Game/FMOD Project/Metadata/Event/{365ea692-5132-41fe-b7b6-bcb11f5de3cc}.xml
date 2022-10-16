@@ -65,6 +65,9 @@
 		<relationship name="modules">
 			<destination>{9888dc39-16c3-4bdb-a6c8-7c00fca74895}</destination>
 		</relationship>
+		<relationship name="markers">
+			<destination>{df8ef002-d7a2-470a-a5e3-0b16b3482e9e}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{1690ea2c-7274-40e9-8287-c01b83b7b361}">
 		<relationship name="modulators">
@@ -99,6 +102,20 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{418bdfb7-a0cc-4b13-8861-e07cbd9e2a5a}" />
+	<object class="LoopRegion" id="{df8ef002-d7a2-470a-a5e3-0b16b3482e9e}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="length">
+			<value>0.2005625</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{196a3168-50eb-4978-b222-16239a030ff6}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{c5564369-05b8-495d-8482-23ee9c88d5f4}</destination>
+		</relationship>
+	</object>
 	<object class="RandomizerModulator" id="{6b798640-fa08-4e2e-a86f-8c6b79258be0}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>pitch</value>
