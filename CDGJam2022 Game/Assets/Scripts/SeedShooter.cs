@@ -8,6 +8,8 @@ namespace CDGJam
 {
     public class SeedShooter : MonoBehaviour
     {
+        public Action<int> onSeedUpdate;
+
         public VirtualController input;
         public float throwStrength = 5f;
         
@@ -36,6 +38,8 @@ namespace CDGJam
 
             Vector2 throwV = input.aim.normalized * throwStrength;
             instance.rb.velocity = throwV;
+
+            onSeedUpdate?.Invoke(seedIndex);
         }
 
         void OnCycleLeft()
@@ -50,15 +54,21 @@ namespace CDGJam
 
         void CycleSeed(int i)
         {
-            seedIndex += i;
-
-            if (seedIndex < 0) seedIndex = seeds.Length - 1;
-            else if (seedIndex >= seeds.Length) seedIndex = 0;
+            seedIndex = GetSeedIndex(seedIndex + i);
+            onSeedUpdate?.Invoke(seedIndex);
         }
 
+        public int GetSeedIndex(int index)
+        {
+            if (index < 0) index = seeds.Length - 1;
+            else if (index >= seeds.Length) index = 0;
+            
+            return index;
+        }
 
         public void RechargeSeed(int seedIndex) {
             seeds[seedIndex].charges++;
+            onSeedUpdate?.Invoke(seedIndex);
         }
     }
 
@@ -66,7 +76,7 @@ namespace CDGJam
     public class SeedType
     {
         public string name;
-        public Sprite icon;
+        public Sprite[] icons = new Sprite[4];
         public Seed seed;
         public int charges;
     }

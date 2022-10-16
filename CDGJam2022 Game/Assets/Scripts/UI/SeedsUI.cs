@@ -1,21 +1,60 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace CDGJam
 {
     public class SeedsUI : MonoBehaviour
     {
-        // Start is called before the first frame update
-        void Start()
+        private SeedShooter shooter;
+
+        public IconHolder mainIcon;
+        public IconHolder leftIcon;
+        public IconHolder rightIcon;
+
+        void Awake()
         {
-        
+            shooter = LevelManager.Instance.player.GetComponent<SeedShooter>();
         }
 
-        // Update is called once per frame
-        void Update()
+        private void OnEnable()
         {
-        
+            if (shooter != null) shooter.onSeedUpdate += UpdateUI;
+        }
+
+        private void OnDisable()
+        {
+            if (shooter != null) shooter.onSeedUpdate -= UpdateUI;
+        }
+
+        void Start()
+        {
+            UpdateUI(shooter.seedIndex);
+        }
+
+        void UpdateUI(int index)
+        {
+            Debug.Log(index);
+            Debug.Log(shooter.GetSeedIndex(index - 1));
+            Debug.Log(shooter.GetSeedIndex(index + 1));
+
+            mainIcon.SetSeedType(shooter.seeds[index]);
+            leftIcon.SetSeedType(shooter.seeds[shooter.GetSeedIndex(index - 1)]);
+            rightIcon.SetSeedType(shooter.seeds[shooter.GetSeedIndex(index + 1)]);
+        }
+
+        [Serializable]
+        public class IconHolder {
+            public Image img;
+            private SeedType seed;
+
+            public void SetSeedType(SeedType type)
+            {
+                seed = type;
+                img.sprite = seed.icons[seed.charges];
+            }
         }
     }
 }

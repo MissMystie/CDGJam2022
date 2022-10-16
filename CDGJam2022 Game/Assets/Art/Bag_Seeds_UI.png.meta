@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 82cc36c69edd1e84992ac29b9e2fe1a4
+guid: 3d16fe4cec35af849a304ec0ff8cd5ae
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -44,7 +44,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -100,215 +100,146 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: flower_seeds_three
+      name: seed_bag_left
       rect:
         serializedVersion: 2
-        x: 115
-        y: 881
-        width: 300
-        height: 297
+        x: 47
+        y: 23
+        width: 376
+        height: 339
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb7a5eabebd603f46b4aab1fadfb1809
-      internalID: -1406817335
+      spriteID: 3eae0e237278edc4490c12630aab6587
+      internalID: -1208639484
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mushroom_spores_three
+      name: dandelion_seed_empty
       rect:
         serializedVersion: 2
-        x: 569
-        y: 892
-        width: 300
-        height: 300
+        x: 485
+        y: 287
+        width: 115
+        height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aecb203d55faf8148a4bd35531e89809
-      internalID: -1281453164
+      spriteID: 779dbd5ace0e331419ef9fa7f6ce463d
+      internalID: -1753726131
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vine_seeds_three
+      name: seef_bag_right
       rect:
         serializedVersion: 2
-        x: 1001
-        y: 865
-        width: 300
-        height: 298
+        x: 689
+        y: 38
+        width: 328
+        height: 383
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e6c76ca4f568c14bbc2f74b88e38923
-      internalID: 1511042845
+      spriteID: f540c651c1a09ff4ca7e614679bf2ab6
+      internalID: -1466366092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: seed_bag
+      name: vine_seed_empty
       rect:
         serializedVersion: 2
-        x: 1421
-        y: 472
-        width: 640
-        height: 627
-      alignment: 9
-      pivot: {x: 0.53, y: 0.4}
+        x: 456
+        y: 126
+        width: 158
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 828f1e916217ce54396116a52b9b9b8f
-      internalID: 7982131
+      spriteID: 90fd6965b37e7284b8749449bb373b32
+      internalID: -2075020574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flower_seeds_two
+      name: mushroom_seed_empty
       rect:
         serializedVersion: 2
-        x: 123
-        y: 434
-        width: 300
-        height: 300
+        x: 474
+        y: 0
+        width: 122
+        height: 126
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2c975dfef85cea4391cd910f4e208b2
-      internalID: 679908279
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mushroom_spores_two
-      rect:
-        serializedVersion: 2
-        x: 587
-        y: 451
-        width: 300
-        height: 300
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b68f55b84e6d5a940aa0050ca6371506
-      internalID: -2113707511
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vine_seeds_two
-      rect:
-        serializedVersion: 2
-        x: 1008
-        y: 450
-        width: 300
-        height: 300
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7c6ceb4329fc0ee4ca2bf8691b9e7ea2
-      internalID: -1173727308
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: flower_seeds_one
-      rect:
-        serializedVersion: 2
-        x: 130
-        y: 34
-        width: 300
-        height: 300
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1cb44622dfcc7f04f9a84dfb6694a432
-      internalID: 1145825605
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mushroom_spores_one
-      rect:
-        serializedVersion: 2
-        x: 592
-        y: 49
-        width: 300
-        height: 300
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b8dbd96e3f5be574397aad9362fcfee0
-      internalID: 1320372469
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vine_seeds_one
-      rect:
-        serializedVersion: 2
-        x: 1008
-        y: 56
-        width: 300
-        height: 300
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1e919dc3c8b746d47a51cc9c3cb4a372
-      internalID: -1607296639
+      spriteID: e2c0533f11ef4b7418d883b170161d28
+      internalID: 901427669
       vertices: []
       indices: 
       edges: []
@@ -324,16 +255,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      seed_bag: 7982131
-      flower_seeds_two: 679908279
-      mushroom_spores_one: 1320372469
-      flower_seeds_one: 1145825605
-      vine_seeds_one: -1607296639
-      vine_seeds_two: -1173727308
-      mushroom_spores_two: -2113707511
-      mushroom_spores_three: -1281453164
-      vine_seeds_three: 1511042845
-      flower_seeds_three: -1406817335
+      seed_bag_left: -1208639484
+      vine_seed_empty: -2075020574
+      seef_bag_right: -1466366092
+      dandelion_seed_empty: -1753726131
+      mushroom_seed_empty: 901427669
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
