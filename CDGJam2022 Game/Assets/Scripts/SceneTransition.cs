@@ -6,16 +6,19 @@ namespace CDGJam
 {
     public class SceneTransition : MonoBehaviour
     {
-        // Start is called before the first frame update
+        public float transitionTime = 20f;
+        public string nextLevel = "Tutorial";
+
         void Start()
         {
-        
+            StartCoroutine(Win());
         }
 
-        // Update is called once per frame
-        void Update()
+        IEnumerator Win()
         {
-        
+            yield return new WaitForSeconds(transitionTime);
+
+            SceneLoader.LoadScene(nextLevel);
         }
     }
 }
