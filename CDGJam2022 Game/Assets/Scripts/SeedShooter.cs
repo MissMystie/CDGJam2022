@@ -1,3 +1,4 @@
+using FMODUnity;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -24,6 +25,11 @@ namespace CDGJam
         public float cdTimer = 0f;
         public float cdTime = 0.5f;
 
+        [Header("SFX")]
+
+        public StudioEventEmitter shootSFX;
+        public StudioEventEmitter cycleSFX;
+
         void Awake()
         {
             input = GetComponent<VirtualController>();
@@ -49,6 +55,7 @@ namespace CDGJam
             instance.rb.velocity = throwV;
 
             seeds[seedIndex].charges--;
+            shootSFX.Play();
 
             onSeedUpdate?.Invoke(seedIndex);
         }
@@ -66,6 +73,7 @@ namespace CDGJam
         void CycleSeed(int i)
         {
             seedIndex = GetSeedIndex(seedIndex + i);
+            cycleSFX.Play();
             onSeedUpdate?.Invoke(seedIndex);
         }
 

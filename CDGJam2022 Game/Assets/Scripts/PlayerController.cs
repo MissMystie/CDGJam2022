@@ -1,3 +1,4 @@
+using FMODUnity;
 using MoreMountains.Feedbacks;
 using System;
 using System.Collections;
@@ -57,6 +58,11 @@ namespace CDGJam
         public string xSpeedAnim = "xSpeed";
         public string ySpeedAnim = "ySpeed";
         public string climbingAnim = "climbing";
+
+        [Header("SFX")]
+
+        public StudioEventEmitter jumpSFX;
+        public StudioEventEmitter climbingSFX;
 
         void Awake()
         {
@@ -124,6 +130,7 @@ namespace CDGJam
                 if(isClimbing) StopClimbing();
                 rb.velocity = new Vector2(rb.velocity.x, jumpVelocity);
                 jumpFX?.PlayFeedbacks();
+                jumpSFX.Play();
             }
         }
 
@@ -140,12 +147,14 @@ namespace CDGJam
             rb.velocity = Vector2.zero;
             rb.gravityScale = 0;
             //transform.position = new Vector2(climbableCol.bounds.center.x, transform.position.y);
+            climbingSFX.Play();
         }
 
         public void StopClimbing()
         {
             isClimbing = false;
             rb.gravityScale = gravityScale;
+            climbingSFX.Stop();
         }
 
         public void Animate() {

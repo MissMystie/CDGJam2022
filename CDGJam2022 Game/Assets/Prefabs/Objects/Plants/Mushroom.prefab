@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 4178596748340539375}
   - component: {fileID: 46015058}
   - component: {fileID: -7080346088859442431}
+  - component: {fileID: 5781087760136751170}
   m_Layer: 0
   m_Name: Mushroom
   m_TagString: Untagged
@@ -165,6 +166,7 @@ MonoBehaviour:
   _bounceFactor: 1.024
   _bounceForceMax: 75
   _bounceForceMin: 18
+  bounceSFX: {fileID: 5781087760136751170}
 --- !u!114 &4178596748340539375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,6 +224,36 @@ MonoBehaviour:
       Data3: 1148441225
       Data4: 1337809678
     Path: event:/SFX/Plants/mushroom_growing_sfx
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &5781087760136751170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8192499887866068696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -33115310
+      Data2: 1248629971
+      Data3: 1070250389
+      Data4: 757874539
+    Path: event:/SFX/mushroom_bounce_sfx
   Event: 
   PlayEvent: 0
   StopEvent: 0

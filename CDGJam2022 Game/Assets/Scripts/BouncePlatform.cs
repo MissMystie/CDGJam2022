@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using FMODUnity;
+using UnityEngine;
 
 namespace CDGJam.Assets.Scripts
 {
@@ -9,6 +10,10 @@ namespace CDGJam.Assets.Scripts
         [SerializeField] float _bounceFactor = 1.00f;
         [SerializeField] float _bounceForceMax = 25f;
         [SerializeField] float _bounceForceMin = 10f;
+
+        [Header("SFX")]
+
+        public StudioEventEmitter bounceSFX;
 
         private void OnTriggerEnter2D(Collider2D col)
         {
@@ -28,6 +33,8 @@ namespace CDGJam.Assets.Scripts
                 {
                     bounceStrength = _bounceForceMin;
                 }
+
+                bounceSFX.Play();
 
                 Debug.Log(transform.up);
                 rb.velocity = transform.up * bounceStrength;
