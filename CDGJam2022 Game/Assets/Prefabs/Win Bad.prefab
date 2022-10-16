@@ -7,6 +7,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 213821327957954475, guid: 3d338668a29f2524382aa98d974652d8, type: 3}
+      propertyPath: PlayEvent
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 213821327957954475, guid: 3d338668a29f2524382aa98d974652d8, type: 3}
+      propertyPath: StopEvent
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8115326073944159326, guid: 3d338668a29f2524382aa98d974652d8, type: 3}
+      propertyPath: startWater
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8115326073944159327, guid: 3d338668a29f2524382aa98d974652d8, type: 3}
       propertyPath: EventReference.Path
       value: event:/BGM/win_bad_bgm

@@ -20,6 +20,9 @@ namespace CDGJam
 
         public Animator transition;
 
+        public StudioEventEmitter water;
+        public bool startWater = true;
+
         void Start()
         {
             anim = GetComponent<Animator>();
@@ -33,6 +36,8 @@ namespace CDGJam
 
             bgm.Stop();
             winFanfare.Play();
+            if(startWater) water.Play();
+            else water.Stop();
             PlayerController player = LevelManager.Instance.player.GetComponent<PlayerController>();
             player.input.enabled = false;
             player.rb.velocity = Vector2.zero;
