@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 981784986279308796}
   - component: {fileID: 1731583676763058198}
   - component: {fileID: 4178596748340539375}
+  - component: {fileID: 46015058}
   m_Layer: 0
   m_Name: Mushroom
   m_TagString: Untagged
@@ -160,7 +161,7 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 64
-  _bounceFactor: 1.024
+  _bounceFactor: 2
   _bounceForceMax: 75
   _bounceForceMin: 15
 --- !u!114 &4178596748340539375
@@ -178,3 +179,25 @@ MonoBehaviour:
   withers: 1
   witherTime: 5
   seedIndex: 1
+  deathPFX: {fileID: 6405397470328090776, guid: 1bd391587a4d3d94fa9a4daef30a8e39, type: 3}
+  growAnim: grow
+--- !u!95 &46015058
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8192499887866068696}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8e6f12d5ab885fb4b8130fd2c0916224, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

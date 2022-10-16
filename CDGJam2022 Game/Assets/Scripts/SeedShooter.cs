@@ -31,7 +31,7 @@ namespace CDGJam
 
         private void Update()
         {
-            Vector3 rot = new Vector3(0, 0, Vector2.SignedAngle(Vector2.right, input.aim));
+            Vector3 rot = new Vector3(0, 0, Vector2.SignedAngle(-Vector2.up, input.aim));
             aimArm.transform.eulerAngles = rot;
         }
 
