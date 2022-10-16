@@ -21,6 +21,7 @@ namespace CDGJam
         public int seedIndex = 0;
 
         public Transform aimArm;
+        public Rigidbody2D _body;
 
         public float cdTimer = 0f;
         public float cdTime = 0.5f;
@@ -33,6 +34,7 @@ namespace CDGJam
         void Awake()
         {
             input = GetComponent<VirtualController>();
+            _body = GetComponent<Rigidbody2D>();
         }
 
         private void Update()
@@ -51,7 +53,7 @@ namespace CDGJam
             Seed instance = GameObject.Instantiate(seeds[seedIndex].seed.gameObject, throwPoint.position, Quaternion.identity).GetComponent<Seed>();
             instance.SetEmitter(this);
             
-            Vector2 throwV = input.aim.normalized * throwStrength;
+            Vector2 throwV = input.aim.normalized * (throwStrength + _body.velocity.magnitude);
             instance.rb.velocity = throwV;
 
             seeds[seedIndex].charges--;
