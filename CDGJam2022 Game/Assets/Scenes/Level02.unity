@@ -443,7 +443,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 255731087}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6, y: -5.8, z: -10}
+  m_LocalPosition: {x: -6, y: -4.8, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -502,7 +502,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 0, z: -10}
+  m_FollowOffset: {x: 0, y: 1, z: -10}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -7426,7 +7426,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961119194}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6, y: -5.8, z: -10}
+  m_LocalPosition: {x: -6, y: -4.8, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8715,11 +8715,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3d7c61149325f4469f1b8be2ac40e7c, type: 3}
---- !u!1 &1235077663 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9170170789476132173, guid: a8298c8e1aa3d9e42bd8d56ed490bcaf, type: 3}
-  m_PrefabInstance: {fileID: 1775375609}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1293734239
 GameObject:
   m_ObjectHideFlags: 0
@@ -8814,7 +8809,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1235077663}
+      - m_Target: {fileID: 1775375610}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -12841,10 +12836,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9170170789476132173, guid: a8298c8e1aa3d9e42bd8d56ed490bcaf, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179423543985421084, guid: a8298c8e1aa3d9e42bd8d56ed490bcaf, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8298c8e1aa3d9e42bd8d56ed490bcaf, type: 3}
+--- !u!1 &1775375610 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9179423543985421084, guid: a8298c8e1aa3d9e42bd8d56ed490bcaf, type: 3}
+  m_PrefabInstance: {fileID: 1775375609}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1785465995 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6422747545323032918, guid: b52141ddd3d2b9242ae8d2c00498c832, type: 3}
