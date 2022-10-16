@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{7987d1ea-7b2c-4257-89e5-9bfaffaee212}">
+		<property name="assetPath">
+			<value>SFX/piano_transition_cue.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>12.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c4e56ad0-d895-4a49-8806-452ffddcd2a6}</destination>
+		</relationship>
+	</object>
+</objects>

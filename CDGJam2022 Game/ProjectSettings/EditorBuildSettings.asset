@@ -9,10 +9,28 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 4d5c46137886cf44582d2b50af99e943
   - enabled: 1
-    path: Assets/Scenes/TestLevel.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/Scenes/Cutscene01.unity
+    guid: 68964a24e551bd44cb32728928e5f7c5
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: 69e1680f4a098b640bf10fb91d1f5747
+  - enabled: 1
+    path: Assets/Scenes/Cutscene02.unity
+    guid: 9d1b27eb2df5e0b4a98346a08adbea35
+  - enabled: 1
+    path: Assets/Scenes/Level01.unity
+    guid: 8927baaa32e51564eaecaa945932f801
+  - enabled: 1
+    path: Assets/Scenes/Cutscene03.unity
+    guid: 7c4430169cb85544e84a524303d570b9
+  - enabled: 1
+    path: Assets/Scenes/Level03.unity
+    guid: 5404cea1ce049844b83a5551b99a953c
+  - enabled: 1
+    path: Assets/Scenes/Cutscene04.unity
+    guid: 681b17c6ff5454740857fcae10dcae33
+  - enabled: 1
+    path: Assets/Scenes/TestLevel.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 67be88739b342d340b31bbf737881306, type: 2}
