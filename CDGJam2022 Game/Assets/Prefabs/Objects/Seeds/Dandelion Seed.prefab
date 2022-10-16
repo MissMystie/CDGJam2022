@@ -73,9 +73,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1356863637
+  m_SortingLayer: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: -754545053, guid: 4985790f23e9ce246a0a99bfde862aee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -138,10 +138,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   breakPFX: {fileID: 7590188277774429583, guid: 46c68d3a66378964c8ab5513f3ea7a62, type: 3}
-  plant: {fileID: 0}
   emitter: {fileID: 0}
   seedIndex: 0
   rotateToTerrain: 0
-  plantGround: {fileID: 6816364381090036784, guid: e76a0ae075c3e574d914fffd08dabe7d, type: 3}
+  plantGround: {fileID: 8408023265970699684, guid: 75b2faf5a07a94c48bd853053dc3d4a0, type: 3}
   plantWall: {fileID: 0}
   plantCeil: {fileID: 0}

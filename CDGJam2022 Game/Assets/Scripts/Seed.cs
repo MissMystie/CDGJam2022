@@ -14,7 +14,6 @@ namespace CDGJam
         public Rigidbody2D rb;
 
         public GameObject breakPFX;
-        public PlantWither plant;
         public SeedShooter emitter;
         public int seedIndex;
         public bool rotateToTerrain;
@@ -49,8 +48,17 @@ namespace CDGJam
                 else if (angle < 135) plant = plantWall;
                 else plant = plantCeil;
 
-                PlantWither instance = GameObject.Instantiate(plant, impactPoint, rotateToTerrain? Quaternion.Euler(0,0,angle) : Quaternion.identity).GetComponent<PlantWither>();
-                instance.SetEmitter(emitter);
+                if (plant != null)
+                {
+                    PlantWither newPlant = GameObject.Instantiate(plant, impactPoint, rotateToTerrain ? Quaternion.Euler(0, 0, -angle) : Quaternion.identity).GetComponent<PlantWither>();
+                    if(newPlant != null) newPlant.SetEmitter(emitter);
+                }
+                else
+                {
+                    GameObject.Instantiate(breakPFX, transform.position, Quaternion.identity);
+                    emitter.RechargeSeed(seedIndex);
+                }
+
             }
             else 
             {

@@ -1,4 +1,5 @@
 using MoreMountains.Feedbacks;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -24,6 +25,11 @@ namespace CDGJam
 
         public float moveSpeed = 5;
         public float jumpVelocity = 8;
+        public float friction = 0.175f;
+        public float drag = 0.075f;
+        public float acc = 0.1f;
+        public float airAcc = 0.05f;
+        public float minVelocity = 0.1f;
 
         [Header("Ground Check")]
 
@@ -82,14 +88,26 @@ namespace CDGJam
             if (isClimbing)
                 Climbing();
             else
-                Movement();
+                Movement(Time.fixedDeltaTime);
         }
 
-        public void Movement()
+        public void Movement(float deltaTime)
         {
             Vector2 v = rb.velocity;
 
-            v.x = input.move.x * moveSpeed;
+            if (input.move.x != 0)
+            {
+                //v.x = input.move.x * moveSpeed;
+
+                v.x += input.move.x * moveSpeed * (isGrounded? acc : airAcc) * deltaTime;
+                v.x = Mathf.Clamp(v.x, -moveSpeed, moveSpeed);
+            }
+            //Apply friction
+            else 
+            {
+                v.x *= (1 - ((isGrounded? friction : drag) * deltaTime));
+                v.x = Mathf.MoveTowards(v.x, 0f, minVelocity);
+            }
 
             rb.velocity = v;
         }
@@ -121,7 +139,7 @@ namespace CDGJam
             isClimbing = true;
             rb.velocity = Vector2.zero;
             rb.gravityScale = 0;
-            transform.position = new Vector2(climbableCol.bounds.center.x, transform.position.y);
+            //transform.position = new Vector2(climbableCol.bounds.center.x, transform.position.y);
         }
 
         public void StopClimbing()
@@ -131,9 +149,16 @@ namespace CDGJam
         }
 
         public void Animate() {
+
+            if (input.move.x != 0) faceDir = Math.Sign(input.move.x);
+
+            Vector3 scale = anim.transform.localScale;
+            scale.x = faceDir;
+            anim.transform.localScale = scale;
+
             anim.SetBool(groundedAnim, isGrounded);
             anim.SetBool(climbingAnim, isClimbing);
-            anim.SetFloat(xSpeedAnim, rb.velocity.x);
+            anim.SetFloat(xSpeedAnim, Mathf.Abs(rb.velocity.x));
             anim.SetFloat(ySpeedAnim, rb.velocity.y);
         }   
 
