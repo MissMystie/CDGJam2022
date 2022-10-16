@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9148238075542931466
+--- !u!114 &-8838935262162589424
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/mushroom_bounce_sfx
+  m_Name: event:/SFX/Plants/mushroom_bounce_sfx
   m_EditorClassIdentifier: 
-  Path: event:/SFX/mushroom_bounce_sfx
+  Path: event:/SFX/Plants/mushroom_bounce_sfx
   Guid:
     Data1: -33115310
     Data2: 1248629971
     Data3: 1070250389
     Data4: 757874539
   Banks:
-  - {fileID: -5205527657298278562}
+  - {fileID: 1129561156488376291}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -27,81 +27,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 259
---- !u!114 &-9062439330285723674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: FMOD Project/Banks/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638015447508374863
-  FileSizes:
-  - Name: Desktop
-    Value: 2148
-  Exists: 1
---- !u!114 &-8692123709609434908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/player_climbing_sfx
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/player_climbing_sfx
-  Guid:
-    Data1: -392963430
-    Data2: 1125264544
-    Data3: 590000822
-    Data4: -1397331705
-  Banks:
-  - {fileID: -5205527657298278562}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2246
---- !u!114 &-8664756834520378547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/player_jumping_sfx
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/player_jumping_sfx
-  Guid:
-    Data1: -694616081
-    Data2: 1100320085
-    Data3: -305812054
-    Data4: 1195537047
-  Banks:
-  - {fileID: -5205527657298278562}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 257
---- !u!114 &-7170701417675005616
+--- !u!114 &-8730630608003432728
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,7 +46,7 @@ MonoBehaviour:
     Data3: -107298124
     Data4: 784302041
   Banks:
-  - {fileID: -3667102880489690087}
+  - {fileID: -8478472704635545741}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -128,7 +54,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 17000
---- !u!114 &-6919556520360013725
+--- !u!114 &-8674784642578522962
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -138,78 +64,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Plants/mushroom_growing_sfx
+  m_Name: event:/SFX/Player/player_climbing_sfx
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Plants/mushroom_growing_sfx
+  Path: event:/SFX/Player/player_climbing_sfx
   Guid:
-    Data1: 442117078
-    Data2: 1186056800
-    Data3: 1148441225
-    Data4: 1337809678
+    Data1: -392963430
+    Data2: 1125264544
+    Data3: 590000822
+    Data4: -1397331705
   Banks:
-  - {fileID: -5205527657298278562}
+  - {fileID: 1129561156488376291}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2000
---- !u!114 &-6610153443704519948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/misc/lose_sfx
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/misc/lose_sfx
-  Guid:
-    Data1: -810495795
-    Data2: 1136517863
-    Data3: -176831560
-    Data4: 487996874
-  Banks:
-  - {fileID: -5205527657298278562}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1903
---- !u!114 &-6115381155411828865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BGM/win_bad_bgm
-  m_EditorClassIdentifier: 
-  Path: event:/BGM/win_bad_bgm
-  Guid:
-    Data1: 197375618
-    Data2: 1265445717
-    Data3: 404532409
-    Data4: -1034342706
-  Banks:
-  - {fileID: -3667102880489690087}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 6034
---- !u!114 &-5205527657298278562
+  Length: 2246
+--- !u!114 &-8478472704635545741
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -219,44 +91,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
+  m_Name: bank:/Music.bank
   m_EditorClassIdentifier: 
-  Path: FMOD Project/Banks/Desktop/SFX.bank
-  Name: SFX
-  StudioPath: bank:/SFX
-  lastModified: 638015447512058022
+  Path: FMOD Project/Banks/Desktop/Music.bank
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 638015457296379813
   FileSizes:
   - Name: Desktop
-    Value: 517888
+    Value: 10170560
   Exists: 1
---- !u!114 &-4769400627418906435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Plants/vines_growing_sfx
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Plants/vines_growing_sfx
-  Guid:
-    Data1: 249604066
-    Data2: 1139616545
-    Data3: 1377833368
-    Data4: -2066877354
-  Banks:
-  - {fileID: -5205527657298278562}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &-3839225110550367456
+--- !u!114 &-7990218480055821105
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -275,7 +120,7 @@ MonoBehaviour:
     Data3: -1955870074
     Data4: 1244330093
   Banks:
-  - {fileID: -5205527657298278562}
+  - {fileID: 1129561156488376291}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -283,321 +128,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 249
---- !u!114 &-3667102880489690087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Music.bank
-  m_EditorClassIdentifier: 
-  Path: FMOD Project/Banks/Desktop/Music.bank
-  Name: Music
-  StudioPath: bank:/Music
-  lastModified: 638015447509065450
-  FileSizes:
-  - Name: Desktop
-    Value: 10170560
-  Exists: 1
---- !u!114 &-3638452820536009960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Plants/plants_dying_sfx
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Plants/plants_dying_sfx
-  Guid:
-    Data1: -2064347505
-    Data2: 1165709421
-    Data3: -1139689047
-    Data4: -1206921530
-  Banks:
-  - {fileID: -5205527657298278562}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1872
---- !u!114 &-3557106413425151372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BGM/win_bgm
-  m_EditorClassIdentifier: 
-  Path: event:/BGM/win_bgm
-  Guid:
-    Data1: -1445033043
-    Data2: 1133570816
-    Data3: -1899519304
-    Data4: -659821665
-  Banks:
-  - {fileID: -5205527657298278562}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4414
---- !u!114 &-2784170207085472275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BGM/piano_hopeful
-  m_EditorClassIdentifier: 
-  Path: event:/BGM/piano_hopeful
-  Guid:
-    Data1: -290452430
-    Data2: 1193986018
-    Data3: -1119250022
-    Data4: -439220660
-  Banks:
-  - {fileID: -3667102880489690087}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 12500
---- !u!114 &-1913964498875379601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BGM/garden_ambience_dead
-  m_EditorClassIdentifier: 
-  Path: event:/BGM/garden_ambience_dead
-  Guid:
-    Data1: 206203626
-    Data2: 1315167908
-    Data3: 927590314
-    Data4: -989591322
-  Banks:
-  - {fileID: -3667102880489690087}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 129501
---- !u!114 &-1198076996014140121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/player_switching_seed_sfx
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/player_switching_seed_sfx
-  Guid:
-    Data1: -676856144
-    Data2: 1271186913
-    Data3: -1849582960
-    Data4: -591279732
-  Banks:
-  - {fileID: -5205527657298278562}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 744
---- !u!114 &-927216855076450138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BGM/main_menu_bgm
-  m_EditorClassIdentifier: 
-  Path: event:/BGM/main_menu_bgm
-  Guid:
-    Data1: 772820776
-    Data2: 1140082591
-    Data3: 789920132
-    Data4: 345024758
-  Banks:
-  - {fileID: 5957030141078565558}
-  - {fileID: -3667102880489690087}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 128052
---- !u!114 &-239189291161954469
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BGM/level_bgm
-  m_EditorClassIdentifier: 
-  Path: event:/BGM/level_bgm
-  Guid:
-    Data1: -731923253
-    Data2: 1177313644
-    Data3: 115310779
-    Data4: -2079294695
-  Banks:
-  - {fileID: -3667102880489690087}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 162507
---- !u!114 &-147017302056680736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BGM/garden_ambience
-  m_EditorClassIdentifier: 
-  Path: event:/BGM/garden_ambience
-  Guid:
-    Data1: 92806615
-    Data2: 1124788796
-    Data3: 1329949582
-    Data4: 1180495852
-  Banks:
-  - {fileID: -3667102880489690087}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 164975
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: -9062439330285723674}
-  - {fileID: 5957030141078565558}
-  - {fileID: -3667102880489690087}
-  - {fileID: -5205527657298278562}
-  EditorEvents:
-  - {fileID: -927216855076450138}
-  - {fileID: -2784170207085472275}
-  - {fileID: -239189291161954469}
-  - {fileID: 4043174314110336209}
-  - {fileID: -7170701417675005616}
-  - {fileID: 6911737554861123907}
-  - {fileID: 7430462197625339489}
-  - {fileID: 1929056887830574983}
-  - {fileID: -3839225110550367456}
-  - {fileID: -3638452820536009960}
-  - {fileID: 5133115621562205448}
-  - {fileID: -8692123709609434908}
-  - {fileID: -3557106413425151372}
-  - {fileID: -1198076996014140121}
-  - {fileID: 4368092423317198906}
-  - {fileID: -6919556520360013725}
-  - {fileID: -4769400627418906435}
-  - {fileID: -8664756834520378547}
-  - {fileID: -6115381155411828865}
-  - {fileID: 3969424417374436234}
-  - {fileID: -9148238075542931466}
-  - {fileID: 4379724724720834554}
-  - {fileID: -6610153443704519948}
-  - {fileID: -147017302056680736}
-  - {fileID: -1913964498875379601}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: 5957030141078565558}
-  StringsBanks:
-  - {fileID: -9062439330285723674}
-  cacheTime: 638015447512058022
-  cacheVersion: 131593
---- !u!114 &1929056887830574983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/player_taking_damage_sfx
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/player_taking_damage_sfx
-  Guid:
-    Data1: 2064936249
-    Data2: 1249789551
-    Data3: 272005768
-    Data4: 2014934321
-  Banks:
-  - {fileID: -5205527657298278562}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 324
---- !u!114 &3969424417374436234
+--- !u!114 &-6241163078910725633
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -616,7 +147,7 @@ MonoBehaviour:
     Data3: 1403777964
     Data4: -571304950
   Banks:
-  - {fileID: -3667102880489690087}
+  - {fileID: -8478472704635545741}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -624,7 +155,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 88711
---- !u!114 &4043174314110336209
+--- !u!114 &-6095856801406404246
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -634,51 +165,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BGM/piano_ambiguous
+  m_Name: event:/SFX/Plants/plants_dying_sfx
   m_EditorClassIdentifier: 
-  Path: event:/BGM/piano_ambiguous
+  Path: event:/SFX/Plants/plants_dying_sfx
   Guid:
-    Data1: -1432524585
-    Data2: 1278019490
-    Data3: 1243556277
-    Data4: -1910236241
+    Data1: -2064347505
+    Data2: 1165709421
+    Data3: -1139689047
+    Data4: -1206921530
   Banks:
-  - {fileID: -3667102880489690087}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 12541
---- !u!114 &4368092423317198906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Plants/mushroom_dying_sfx
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Plants/mushroom_dying_sfx
-  Guid:
-    Data1: 665915845
-    Data2: 1276569159
-    Data3: -922471493
-    Data4: -476418725
-  Banks:
-  - {fileID: -5205527657298278562}
+  - {fileID: 1129561156488376291}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1191
---- !u!114 &4379724724720834554
+  Length: 1872
+--- !u!114 &-6068743846567523711
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -688,98 +192,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/misc/water_flowing_sfx
+  m_Name: event:/SFX/Misc/lose_sfx
   m_EditorClassIdentifier: 
-  Path: event:/SFX/misc/water_flowing_sfx
+  Path: event:/SFX/Misc/lose_sfx
   Guid:
-    Data1: -719012968
-    Data2: 1200730326
-    Data3: -703035519
-    Data4: 1285524015
+    Data1: -810495795
+    Data2: 1136517863
+    Data3: -176831560
+    Data4: 487996874
   Banks:
-  - {fileID: -5205527657298278562}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 14264
---- !u!114 &5133115621562205448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/player_walking_sfx
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/player_walking_sfx
-  Guid:
-    Data1: 912172690
-    Data2: 1107185970
-    Data3: -1313032521
-    Data4: -857514721
-  Banks:
-  - {fileID: -5205527657298278562}
+  - {fileID: 1129561156488376291}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 200
---- !u!114 &5957030141078565558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: FMOD Project/Banks/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638015447508359847
-  FileSizes:
-  - Name: Desktop
-    Value: 1456128
-  Exists: 1
---- !u!114 &6911737554861123907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BGM/piano_triumph
-  m_EditorClassIdentifier: 
-  Path: event:/BGM/piano_triumph
-  Guid:
-    Data1: 2075679454
-    Data2: 1312509503
-    Data3: -986830145
-    Data4: -844062928
-  Banks:
-  - {fileID: -3667102880489690087}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 6708
---- !u!114 &7430462197625339489
+  Length: 1903
+--- !u!114 &-5887401534885857589
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -798,7 +228,7 @@ MonoBehaviour:
     Data3: -945856590
     Data4: 1087128743
   Banks:
-  - {fileID: -3667102880489690087}
+  - {fileID: -8478472704635545741}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -806,3 +236,546 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 108721
+--- !u!114 &-5428566295359170164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Plants/mushroom_growing_sfx
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Plants/mushroom_growing_sfx
+  Guid:
+    Data1: 442117078
+    Data2: 1186056800
+    Data3: 1148441225
+    Data4: 1337809678
+  Banks:
+  - {fileID: 1129561156488376291}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-3863172195517878054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/player_jumping_sfx
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/player_jumping_sfx
+  Guid:
+    Data1: -694616081
+    Data2: 1100320085
+    Data3: -305812054
+    Data4: 1195537047
+  Banks:
+  - {fileID: 1129561156488376291}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 257
+--- !u!114 &-3671761386461454324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/player_taking_damage_sfx
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/player_taking_damage_sfx
+  Guid:
+    Data1: 2064936249
+    Data2: 1249789551
+    Data3: 272005768
+    Data4: 2014934321
+  Banks:
+  - {fileID: 1129561156488376291}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 324
+--- !u!114 &-2021366902595078002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/level_bgm
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/level_bgm
+  Guid:
+    Data1: -731923253
+    Data2: 1177313644
+    Data3: 115310779
+    Data4: -2079294695
+  Banks:
+  - {fileID: -8478472704635545741}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 162507
+--- !u!114 &-1870496044517296350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: 
+  Guid:
+    Data1: 206203626
+    Data2: 1315167908
+    Data3: 927590314
+    Data4: -989591322
+  Banks:
+  - {fileID: -8478472704635545741}
+  - {fileID: -8478472704635545741}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 129501
+--- !u!114 &-883375737689311253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Misc/water_flowing_sfx
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Misc/water_flowing_sfx
+  Guid:
+    Data1: -719012968
+    Data2: 1200730326
+    Data3: -703035519
+    Data4: 1285524015
+  Banks:
+  - {fileID: 1129561156488376291}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 14264
+--- !u!114 &-434578776158082390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/piano_triumph
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/piano_triumph
+  Guid:
+    Data1: 2075679454
+    Data2: 1312509503
+    Data3: -986830145
+    Data4: -844062928
+  Banks:
+  - {fileID: -8478472704635545741}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6708
+--- !u!114 &-29985722125132434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD Project/Banks/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638015457912687815
+  FileSizes:
+  - Name: Desktop
+    Value: 2180
+  Exists: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -29985722125132434}
+  - {fileID: 312864486258933173}
+  - {fileID: -8478472704635545741}
+  - {fileID: 1129561156488376291}
+  EditorEvents:
+  - {fileID: 8900937351486656137}
+  - {fileID: 1248715294363743652}
+  - {fileID: -6241163078910725633}
+  - {fileID: 1420482823013283496}
+  - {fileID: -2021366902595078002}
+  - {fileID: -1870496044517296350}
+  - {fileID: 7760115548525284112}
+  - {fileID: -8730630608003432728}
+  - {fileID: -434578776158082390}
+  - {fileID: -5887401534885857589}
+  - {fileID: -3671761386461454324}
+  - {fileID: -7990218480055821105}
+  - {fileID: -8838935262162589424}
+  - {fileID: -6095856801406404246}
+  - {fileID: 7713997061651664107}
+  - {fileID: -883375737689311253}
+  - {fileID: -8674784642578522962}
+  - {fileID: 4503011408790916339}
+  - {fileID: 6898857537518194642}
+  - {fileID: 6226743081173914629}
+  - {fileID: -6068743846567523711}
+  - {fileID: -5428566295359170164}
+  - {fileID: 6909527965696112124}
+  - {fileID: -3863172195517878054}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 312864486258933173}
+  StringsBanks:
+  - {fileID: -29985722125132434}
+  cacheTime: 638015457912687815
+  cacheVersion: 131593
+--- !u!114 &312864486258933173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD Project/Banks/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638015457912636811
+  FileSizes:
+  - Name: Desktop
+    Value: 1456384
+  Exists: 1
+--- !u!114 &1129561156488376291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD Project/Banks/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638015457296499225
+  FileSizes:
+  - Name: Desktop
+    Value: 517888
+  Exists: 1
+--- !u!114 &1248715294363743652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/piano_hopeful
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/piano_hopeful
+  Guid:
+    Data1: -290452430
+    Data2: 1193986018
+    Data3: -1119250022
+    Data4: -439220660
+  Banks:
+  - {fileID: -8478472704635545741}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12500
+--- !u!114 &1420482823013283496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/win_bad_bgm
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/win_bad_bgm
+  Guid:
+    Data1: 197375618
+    Data2: 1265445717
+    Data3: 404532409
+    Data4: -1034342706
+  Banks:
+  - {fileID: -8478472704635545741}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6034
+--- !u!114 &4503011408790916339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/win_bgm
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/win_bgm
+  Guid:
+    Data1: -1445033043
+    Data2: 1133570816
+    Data3: -1899519304
+    Data4: -659821665
+  Banks:
+  - {fileID: 1129561156488376291}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4414
+--- !u!114 &6226743081173914629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Plants/mushroom_dying_sfx
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Plants/mushroom_dying_sfx
+  Guid:
+    Data1: 665915845
+    Data2: 1276569159
+    Data3: -922471493
+    Data4: -476418725
+  Banks:
+  - {fileID: 1129561156488376291}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1191
+--- !u!114 &6898857537518194642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/player_switching_seed_sfx
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/player_switching_seed_sfx
+  Guid:
+    Data1: -676856144
+    Data2: 1271186913
+    Data3: -1849582960
+    Data4: -591279732
+  Banks:
+  - {fileID: 1129561156488376291}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 744
+--- !u!114 &6909527965696112124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Plants/vines_growing_sfx
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Plants/vines_growing_sfx
+  Guid:
+    Data1: 249604066
+    Data2: 1139616545
+    Data3: 1377833368
+    Data4: -2066877354
+  Banks:
+  - {fileID: 1129561156488376291}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &7713997061651664107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/player_walking_sfx
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/player_walking_sfx
+  Guid:
+    Data1: 912172690
+    Data2: 1107185970
+    Data3: -1313032521
+    Data4: -857514721
+  Banks:
+  - {fileID: 1129561156488376291}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 200
+--- !u!114 &7760115548525284112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/piano_ambiguous
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/piano_ambiguous
+  Guid:
+    Data1: -1432524585
+    Data2: 1278019490
+    Data3: 1243556277
+    Data4: -1910236241
+  Banks:
+  - {fileID: -8478472704635545741}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12541
+--- !u!114 &8900937351486656137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/main_menu_bgm
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/main_menu_bgm
+  Guid:
+    Data1: 772820776
+    Data2: 1140082591
+    Data3: 789920132
+    Data4: 345024758
+  Banks:
+  - {fileID: 312864486258933173}
+  - {fileID: -8478472704635545741}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 128052
