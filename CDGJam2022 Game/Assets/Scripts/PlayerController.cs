@@ -58,6 +58,7 @@ namespace CDGJam
         public string xSpeedAnim = "xSpeed";
         public string ySpeedAnim = "ySpeed";
         public string climbingAnim = "climbing";
+        public ParticleSystem walkingPFX;
 
         [Header("SFX")]
 
@@ -85,6 +86,12 @@ namespace CDGJam
             bool wasGrounded = isGrounded;
             isGrounded = (ground != null);
             if (!wasGrounded && isGrounded) OnGrounded();
+
+            if (!isGrounded || rb.velocity.x == 0)
+            {
+                if (walkingPFX.isPlaying) walkingPFX.Stop(); 
+            }
+            else if (!walkingPFX.isPlaying) walkingPFX.Play();
 
             if (isClimbing && !onClimbableCol)
                 StopClimbing();

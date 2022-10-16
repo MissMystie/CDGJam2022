@@ -8682,6 +8682,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 658625201, guid: ef4ce808f1a76f045bdb75b3317c2612, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/BGM/garden_ambience
+      objectReference: {fileID: 0}
+    - target: {fileID: 658625201, guid: ef4ce808f1a76f045bdb75b3317c2612, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: 92806615
+      objectReference: {fileID: 0}
+    - target: {fileID: 658625201, guid: ef4ce808f1a76f045bdb75b3317c2612, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1124788796
+      objectReference: {fileID: 0}
+    - target: {fileID: 658625201, guid: ef4ce808f1a76f045bdb75b3317c2612, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: 1329949582
+      objectReference: {fileID: 0}
+    - target: {fileID: 658625201, guid: ef4ce808f1a76f045bdb75b3317c2612, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: 1180495852
+      objectReference: {fileID: 0}
     - target: {fileID: 7384502191773065633, guid: ef4ce808f1a76f045bdb75b3317c2612, type: 3}
       propertyPath: m_RootOrder
       value: 9

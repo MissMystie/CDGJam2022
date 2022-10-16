@@ -42,10 +42,10 @@ MonoBehaviour:
   Path: FMOD Project/Banks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638015418294903080
+  lastModified: 638015428228162621
   FileSizes:
   - Name: Desktop
-    Value: 2056
+    Value: 2148
   Exists: 1
 --- !u!114 &-8692123709609434908
 MonoBehaviour:
@@ -181,7 +181,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 1903
 --- !u!114 &-6115381155411828865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,10 +224,10 @@ MonoBehaviour:
   Path: FMOD Project/Banks/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638015418295713775
+  lastModified: 638015428229163480
   FileSizes:
   - Name: Desktop
-    Value: 215680
+    Value: 225408
   Exists: 1
 --- !u!114 &-4769400627418906435
 MonoBehaviour:
@@ -298,10 +298,10 @@ MonoBehaviour:
   Path: FMOD Project/Banks/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638015418295418529
+  lastModified: 638015428228853214
   FileSizes:
   - Name: Desktop
-    Value: 6280288
+    Value: 10170080
   Exists: 1
 --- !u!114 &-3638452820536009960
 MonoBehaviour:
@@ -384,6 +384,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 12500
+--- !u!114 &-1913964498875379601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/garden_ambience_dead
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/garden_ambience_dead
+  Guid:
+    Data1: 206203626
+    Data2: 1315167908
+    Data3: 927590314
+    Data4: -989591322
+  Banks:
+  - {fileID: -3667102880489690087}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 129501
 --- !u!114 &-1198076996014140121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -466,6 +493,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 162507
+--- !u!114 &-147017302056680736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/garden_ambience
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/garden_ambience
+  Guid:
+    Data1: 92806615
+    Data2: 1124788796
+    Data3: 1329949582
+    Data4: 1180495852
+  Banks:
+  - {fileID: -3667102880489690087}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 164975
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -507,12 +561,14 @@ MonoBehaviour:
   - {fileID: -9148238075542931466}
   - {fileID: 4379724724720834554}
   - {fileID: -6610153443704519948}
+  - {fileID: -147017302056680736}
+  - {fileID: -1913964498875379601}
   EditorParameters: []
   MasterBanks:
   - {fileID: 5957030141078565558}
   StringsBanks:
   - {fileID: -9062439330285723674}
-  cacheTime: 638015418295713775
+  cacheTime: 638015428229163480
   cacheVersion: 131593
 --- !u!114 &1929056887830574983
 MonoBehaviour:
@@ -691,7 +747,7 @@ MonoBehaviour:
   Path: FMOD Project/Banks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638015418294888067
+  lastModified: 638015428228142603
   FileSizes:
   - Name: Desktop
     Value: 1456128
