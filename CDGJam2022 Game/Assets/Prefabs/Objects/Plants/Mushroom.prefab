@@ -177,11 +177,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efd2bdc42aeb3a84f80396e5d1b2ca39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  withers: 1
+  withers: 0
   witherTime: 5
   seedIndex: 1
   deathPFX: {fileID: 6405397470328090776, guid: 1bd391587a4d3d94fa9a4daef30a8e39, type: 3}
-  growAnim: grow
+  growAnim: 
 --- !u!95 &46015058
 Animator:
   serializedVersion: 4
@@ -223,7 +223,7 @@ MonoBehaviour:
       Data4: 1337809678
     Path: event:/SFX/Plants/mushroom_growing_sfx
   Event: 
-  PlayEvent: 1
+  PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0

@@ -158,11 +158,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efd2bdc42aeb3a84f80396e5d1b2ca39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  withers: 1
+  withers: 0
   witherTime: 5
   seedIndex: 2
   deathPFX: {fileID: 2894110556749784495, guid: 42a68d89dedc91548bd65b0e9ceafafc, type: 3}
-  growAnim: grow
+  growAnim: 
 --- !u!95 &429879441
 Animator:
   serializedVersion: 4
@@ -204,7 +204,7 @@ MonoBehaviour:
       Data4: -2066877354
     Path: event:/SFX/Plants/vines_growing_sfx
   Event: 
-  PlayEvent: 1
+  PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
