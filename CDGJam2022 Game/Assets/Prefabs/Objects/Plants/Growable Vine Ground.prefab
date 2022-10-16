@@ -7,9 +7,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8918527534980219959, guid: 2468fdb629c44094b9fde7b7ed3ecee9, type: 3}
+      propertyPath: PlayEvent
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1705176337007782596, guid: 2468fdb629c44094b9fde7b7ed3ecee9, type: 3}
       propertyPath: m_Name
-      value: Vine Ground Static
+      value: Growable Vine Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1705176337007782603, guid: 2468fdb629c44094b9fde7b7ed3ecee9, type: 3}
       propertyPath: m_RootOrder
@@ -57,12 +61,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4182250247043425376, guid: 2468fdb629c44094b9fde7b7ed3ecee9, type: 3}
       propertyPath: withers
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4182250247043425376, guid: 2468fdb629c44094b9fde7b7ed3ecee9, type: 3}
       propertyPath: growAnim
-      value: 
+      value: grow
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: -8918527534980219959, guid: 2468fdb629c44094b9fde7b7ed3ecee9, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2468fdb629c44094b9fde7b7ed3ecee9, type: 3}
