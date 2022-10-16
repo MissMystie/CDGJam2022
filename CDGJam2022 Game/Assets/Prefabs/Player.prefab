@@ -640,7 +640,7 @@ MonoBehaviour:
     - {fileID: 1320372469, guid: 82cc36c69edd1e84992ac29b9e2fe1a4, type: 3}
     - {fileID: -2113707511, guid: 82cc36c69edd1e84992ac29b9e2fe1a4, type: 3}
     - {fileID: -1281453164, guid: 82cc36c69edd1e84992ac29b9e2fe1a4, type: 3}
-    seed: {fileID: 146130435936245487, guid: 6a79f16efb9e5e743a99d3d87cbef948, type: 3}
+    seed: {fileID: 146130435936245487, guid: f2f7aecad4aeb174395f6e61dc52b798, type: 3}
     charges: 1
   - name: Vine
     icons:
@@ -648,8 +648,8 @@ MonoBehaviour:
     - {fileID: -1607296639, guid: 82cc36c69edd1e84992ac29b9e2fe1a4, type: 3}
     - {fileID: -1173727308, guid: 82cc36c69edd1e84992ac29b9e2fe1a4, type: 3}
     - {fileID: 1511042845, guid: 82cc36c69edd1e84992ac29b9e2fe1a4, type: 3}
-    seed: {fileID: 146130435936245487, guid: 6a79f16efb9e5e743a99d3d87cbef948, type: 3}
-    charges: 0
+    seed: {fileID: 146130435936245487, guid: 6c2b63907f6c8e94b9d0280654874bf4, type: 3}
+    charges: 1
   seedIndex: 0
   aimArm: {fileID: 4843674400489328299}
   cdTimer: 0
