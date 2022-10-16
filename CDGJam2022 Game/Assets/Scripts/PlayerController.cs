@@ -25,9 +25,11 @@ namespace CDGJam
 
         public float moveSpeed = 5;
         public float jumpVelocity = 8;
-        public float friction = 0.075f;
+        public float friction = 0.175f;
+        public float drag = 0.075f;
         public float acc = 0.1f;
-
+        public float airAcc = 0.05f;
+        public float minVelocity = 0.1f;
 
         [Header("Ground Check")]
 
@@ -95,14 +97,16 @@ namespace CDGJam
 
             if (input.move.x != 0)
             {
-                v.x = input.move.x * moveSpeed;
-                //v.x += input.move.x * moveSpeed * acc * deltaTime;
-                //v.x = Mathf.Clamp(v.x, -moveSpeed, moveSpeed);
+                //v.x = input.move.x * moveSpeed;
+
+                v.x += input.move.x * moveSpeed * (isGrounded? acc : airAcc) * deltaTime;
+                v.x = Mathf.Clamp(v.x, -moveSpeed, moveSpeed);
             }
             //Apply friction
-            else if (isGrounded)
+            else 
             {
-                Mathf.MoveTowards(input.move.x, 0f, friction * Mathf.Abs(input.move.x) + 0.5f);
+                v.x *= (1 - ((isGrounded? friction : drag) * deltaTime));
+                if (Mathf.Abs(v.x) < minVelocity) v.x = 0;
             }
 
             rb.velocity = v;
