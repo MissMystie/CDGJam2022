@@ -41,8 +41,6 @@ namespace CDGJam
                 Vector2 impactPoint = col.collider.ClosestPoint(transform.position);
                 float angle = Vector2.Angle(Vector2.up, (Vector2)transform.position - impactPoint);
 
-                Debug.Log("Angle: " + angle);
-
                 GameObject plant;
                 if (angle < 45) plant = plantGround;
                 else if (angle < 135) plant = plantWall;

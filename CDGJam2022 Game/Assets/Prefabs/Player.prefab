@@ -625,7 +625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input: {fileID: 0}
-  throwStrength: 10
+  throwStrength: 25
   throwPoint: {fileID: 1945088927}
   seeds:
   - name: Dandelion
@@ -654,6 +654,7 @@ MonoBehaviour:
     charges: 1
   seedIndex: 0
   aimArm: {fileID: 4843674400489328299}
+  _body: {fileID: 0}
   cdTimer: 0
   cdTime: 0.5
   shootSFX: {fileID: 1479211611}
