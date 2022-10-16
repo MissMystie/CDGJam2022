@@ -8,7 +8,7 @@
 			<value>lose_sfx</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{488ca71e-dc66-468e-990a-e53dc798b15b}</destination>
@@ -41,6 +41,9 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{d7a2f5a9-049a-4517-aa52-1ec5c24d5999}">
+		<relationship name="modules">
+			<destination>{6e5fcfa0-1227-40c5-9cee-2d725576d0d5}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{a786645f-6bc0-4302-8df2-bd3f2eadeddc}</destination>
 		</relationship>
@@ -59,9 +62,9 @@
 	<object class="EventAutomatableProperties" id="{97d59478-eb04-492f-ada6-0b9ef4d55449}" />
 	<object class="MarkerTrack" id="{298c0f51-21f7-4ce0-8c9e-35ec9bfe54bc}" />
 	<object class="Timeline" id="{4fb3f9e8-7af1-4fc0-bb39-56be41e4978e}">
-		<property name="isProxyEnabled">
-			<value>false</value>
-		</property>
+		<relationship name="modules">
+			<destination>{6e5fcfa0-1227-40c5-9cee-2d725576d0d5}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{a786645f-6bc0-4302-8df2-bd3f2eadeddc}">
 		<relationship name="effectChain">
@@ -72,6 +75,14 @@
 		</relationship>
 		<relationship name="mixer">
 			<destination>{8af44332-8dfc-434e-9fb8-e2ddcb09d09e}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{6e5fcfa0-1227-40c5-9cee-2d725576d0d5}">
+		<property name="length">
+			<value>1.9031041666666666</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{852ad62e-a3a7-4094-9d22-f2a3da28fb38}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{aba2365b-9794-4cbd-8ccf-722fadfd5237}">
