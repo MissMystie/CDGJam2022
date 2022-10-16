@@ -431,7 +431,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1145825605, guid: 82cc36c69edd1e84992ac29b9e2fe1a4, type: 3}
+  m_Sprite: {fileID: -680948265, guid: 6e55b2e790f6e044bab070d614b090ff, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -507,7 +507,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1607296639, guid: 82cc36c69edd1e84992ac29b9e2fe1a4, type: 3}
+  m_Sprite: {fileID: 776372510, guid: 6e55b2e790f6e044bab070d614b090ff, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -648,7 +648,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1320372469, guid: 82cc36c69edd1e84992ac29b9e2fe1a4, type: 3}
+  m_Sprite: {fileID: 1090745789, guid: 6e55b2e790f6e044bab070d614b090ff, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -750,7 +750,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1691017867
 RectTransform:
   m_ObjectHideFlags: 0
@@ -896,7 +896,7 @@ MonoBehaviour:
   pauseMenuUI: {fileID: 6422747545422861103}
   settingsUI: {fileID: 3504265994056037789}
   controlsUI: {fileID: 6422747545795666453}
-  bgm: {fileID: 0}
+  win: {fileID: 0}
   player: {fileID: 0}
   isPaused: 0
   state: 0
@@ -1698,6 +1698,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4804103662933304048, guid: d23afaafd2796d2498bc557a10e0aa88, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4804103662933304050, guid: d23afaafd2796d2498bc557a10e0aa88, type: 3}
+      propertyPath: m_PresetInfoIsWorld
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5025200849152236732, guid: d23afaafd2796d2498bc557a10e0aa88, type: 3}

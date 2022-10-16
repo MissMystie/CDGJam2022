@@ -1,3 +1,4 @@
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,8 @@ namespace CDGJam
         public static LevelManager Instance;
         public Vector2 checkpoint;
         public float respawnTime = 0.5f;
+
+        public StudioEventEmitter deathSFX;
 
         public GameObject player {get; private set;}
 
@@ -44,6 +47,7 @@ namespace CDGJam
 
         public IEnumerator RespawnCoroutine()
         {
+            deathSFX.Play();
             player.gameObject.SetActive(false); //Disables the player object
 
             yield return new WaitForSeconds(respawnTime);

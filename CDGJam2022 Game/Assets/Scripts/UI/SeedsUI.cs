@@ -31,8 +31,7 @@ namespace CDGJam
 
         void Start()
         {
-            if (shooter == null) 
-            else UpdateUI(shooter.seedIndex);
+            if(shooter != null) UpdateUI(shooter.seedIndex);
         }
 
         void UpdateUI(int index)
