@@ -54,5 +54,9 @@ namespace CDGJam
             Debug.Log("Player respawned!");
         }
 
+
+        public void ClearLevel() {
+            Debug.Log("You win :)");
+        }
     }
 }

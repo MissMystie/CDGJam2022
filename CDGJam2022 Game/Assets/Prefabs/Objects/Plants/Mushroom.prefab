@@ -160,9 +160,9 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 64
-  _bounceFactor: 1
-  _bounceForceMax: 25
-  _bounceForceMin: 10
+  _bounceFactor: 1.024
+  _bounceForceMax: 75
+  _bounceForceMin: 15
 --- !u!114 &4178596748340539375
 MonoBehaviour:
   m_ObjectHideFlags: 0

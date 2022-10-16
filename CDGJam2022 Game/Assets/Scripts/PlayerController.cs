@@ -106,11 +106,10 @@ namespace CDGJam
             else 
             {
                 v.x *= (1 - ((isGrounded? friction : drag) * deltaTime));
-                if (Mathf.Abs(v.x) < minVelocity) v.x = 0;
+                v.x = Mathf.MoveTowards(v.x, 0f, minVelocity);
             }
 
             rb.velocity = v;
-
         }
 
         public void Climbing()
