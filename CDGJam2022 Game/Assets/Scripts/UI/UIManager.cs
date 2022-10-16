@@ -1,3 +1,4 @@
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
@@ -14,6 +15,7 @@ namespace CDGJam
         public GameObject pauseMenuUI;
         public GameObject settingsUI;
         public GameObject controlsUI;
+        public StudioEventEmitter bgm;
 
         [Space]
 
