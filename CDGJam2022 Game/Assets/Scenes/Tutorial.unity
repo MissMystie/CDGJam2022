@@ -1357,11 +1357,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4710155679437259688, guid: 49724d6fc69f00144b7acf28091d1ba7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.8000002
+      value: 66.3
       objectReference: {fileID: 0}
     - target: {fileID: 4710155679437259688, guid: 49724d6fc69f00144b7acf28091d1ba7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.1000004
+      value: 40.4
       objectReference: {fileID: 0}
     - target: {fileID: 4710155679437259688, guid: 49724d6fc69f00144b7acf28091d1ba7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1928,7 +1928,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 439776883}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.8000002, y: -5.1000004, z: -10}
+  m_LocalPosition: {x: 66.3, y: 41.4, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8361,7 +8361,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4460639278987630210, guid: 430288ab783b1384f955ff219ae4064f, type: 3}
       propertyPath: m_DynamicOccludee
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4460639278987630210, guid: 430288ab783b1384f955ff219ae4064f, type: 3}
       propertyPath: m_LocalAABB.m_Center.x
@@ -9546,7 +9546,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1924553590}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.8000002, y: -5.1000004, z: -10}
+  m_LocalPosition: {x: 66.3, y: 41.4, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
