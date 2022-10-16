@@ -15,7 +15,7 @@ namespace CDGJam
         public GameObject pauseMenuUI;
         public GameObject settingsUI;
         public GameObject controlsUI;
-        public StudioEventEmitter bgm;
+        public WinTrigger win;
 
         [Space]
 
@@ -23,7 +23,7 @@ namespace CDGJam
 
         public bool isPaused = false;
 
-        public enum UIState { HUD, PAUSE, SETTINGS, CONTROLS }
+        public enum UIState { HUD, PAUSE, SETTINGS, CONTROLS, WIN }
         public UIState state;
 
         void Awake()
@@ -67,6 +67,9 @@ namespace CDGJam
         {
             switch (state)
             {
+                case UIState.WIN:
+                    NextLevel();
+                    break;
                 case UIState.HUD:
                     Pause();
                     break;
@@ -80,6 +83,20 @@ namespace CDGJam
                     CloseControls();
                 break;
             }
+        }
+
+        public void Win()
+        {
+            hudUI.SetActive(false);
+            pauseMenuUI.SetActive(false);
+            controlsUI.SetActive(false);
+
+            state = UIState.WIN;
+        }
+
+        public void NextLevel()
+        {
+            win.LoadNextLevel();
         }
 
         public void Pause()
