@@ -19,10 +19,20 @@ namespace CDGJam
 
         public int seedIndex = 0;
 
+        public Transform aimArm;
+
+        public float cdTimer = 0f;
+        public float cdTime = 0.5f;
 
         void Awake()
         {
             input = GetComponent<VirtualController>();
+        }
+
+        private void Update()
+        {
+            Vector3 rot = new Vector3(0, 0, Vector2.SignedAngle(Vector2.right, input.aim));
+            aimArm.transform.eulerAngles = rot;
         }
 
         void OnShoot()
@@ -34,10 +44,11 @@ namespace CDGJam
 
             Seed instance = GameObject.Instantiate(seeds[seedIndex].seed.gameObject, input.aimPoint.position, Quaternion.identity).GetComponent<Seed>();
             instance.SetEmitter(this);
-            seeds[seedIndex].charges--;
-
+            
             Vector2 throwV = input.aim.normalized * throwStrength;
             instance.rb.velocity = throwV;
+
+            seeds[seedIndex].charges--;
 
             onSeedUpdate?.Invoke(seedIndex);
         }
@@ -66,8 +77,8 @@ namespace CDGJam
             return index;
         }
 
-        public void RechargeSeed(int seedIndex) {
-            seeds[seedIndex].charges++;
+        public void RechargeSeed(int index) {
+            seeds[index].charges++;
             onSeedUpdate?.Invoke(seedIndex);
         }
     }

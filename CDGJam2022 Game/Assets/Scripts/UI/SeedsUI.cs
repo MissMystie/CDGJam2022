@@ -36,17 +36,14 @@ namespace CDGJam
 
         void UpdateUI(int index)
         {
-            Debug.Log(index);
-            Debug.Log(shooter.GetSeedIndex(index - 1));
-            Debug.Log(shooter.GetSeedIndex(index + 1));
-
             mainIcon.SetSeedType(shooter.seeds[index]);
             leftIcon.SetSeedType(shooter.seeds[shooter.GetSeedIndex(index - 1)]);
             rightIcon.SetSeedType(shooter.seeds[shooter.GetSeedIndex(index + 1)]);
         }
 
         [Serializable]
-        public class IconHolder {
+        public class IconHolder 
+        {
             public Image img;
             private SeedType seed;
 
