@@ -653,7 +653,7 @@ MonoBehaviour:
     seed: {fileID: 146130435936245487, guid: 6c2b63907f6c8e94b9d0280654874bf4, type: 3}
     charges: 1
   seedIndex: 0
-  aimArm: {fileID: 4843674400489328299}
+  aimArm: {fileID: 3185439033247327370}
   _body: {fileID: 0}
   cdTimer: 0
   cdTime: 0.5
@@ -11163,7 +11163,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3185439033247327370
 Transform:
   m_ObjectHideFlags: 0
