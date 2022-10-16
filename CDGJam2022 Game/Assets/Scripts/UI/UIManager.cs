@@ -87,6 +87,9 @@ namespace CDGJam
             hudUI.SetActive(false);
             pauseMenuUI.SetActive(true);
             controlsUI.SetActive(false);
+
+            Time.timeScale = 0f;
+
             isPaused = true;
         }
 
@@ -97,6 +100,9 @@ namespace CDGJam
             hudUI.SetActive(true);
             pauseMenuUI.SetActive(false);
             controlsUI.SetActive(false);
+
+            Time.timeScale = 1f;
+
             isPaused = false;
         }
 
