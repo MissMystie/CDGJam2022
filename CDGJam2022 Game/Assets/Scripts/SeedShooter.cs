@@ -42,7 +42,7 @@ namespace CDGJam
                 return;
             }
 
-            Seed instance = GameObject.Instantiate(seeds[seedIndex].seed.gameObject, input.aimPoint.position, Quaternion.identity).GetComponent<Seed>();
+            Seed instance = GameObject.Instantiate(seeds[seedIndex].seed.gameObject, throwPoint.position, Quaternion.identity).GetComponent<Seed>();
             instance.SetEmitter(this);
             
             Vector2 throwV = input.aim.normalized * throwStrength;
