@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 7818090144716860325}
   - component: {fileID: 9092018692648620855}
   - component: {fileID: 7156135213266824509}
+  - component: {fileID: 6106877126107810683}
   m_Layer: 8
   m_Name: Vine Wall
   m_TagString: Climbable
@@ -159,3 +160,25 @@ MonoBehaviour:
   withers: 1
   witherTime: 5
   seedIndex: 2
+  deathPFX: {fileID: 2894110556749784495, guid: 42a68d89dedc91548bd65b0e9ceafafc, type: 3}
+  growAnim: grow
+--- !u!95 &6106877126107810683
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3262605524588714490}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 85cbe3c55637a2748a71846b814714f5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 1705176337007782597}
   - component: {fileID: 4182250247043425376}
   - component: {fileID: 9125958442226408429}
+  - component: {fileID: 1136414522}
   m_Layer: 3
   m_Name: Vine Ground
   m_TagString: Climbable
@@ -160,6 +161,8 @@ MonoBehaviour:
   withers: 1
   witherTime: 5
   seedIndex: 2
+  deathPFX: {fileID: 2894110556749784495, guid: 42a68d89dedc91548bd65b0e9ceafafc, type: 3}
+  growAnim: grow
 --- !u!251 &9125958442226408429
 PlatformEffector2D:
   m_ObjectHideFlags: 0
@@ -179,3 +182,23 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!95 &1136414522
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705176337007782596}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 85cbe3c55637a2748a71846b814714f5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

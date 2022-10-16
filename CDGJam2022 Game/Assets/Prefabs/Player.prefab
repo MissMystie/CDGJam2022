@@ -87,13 +87,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1945088926}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.75, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.129, y: -0.313, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8183409150448625758}
-  m_RootOrder: 5
+  m_Father: {fileID: 3185439033247327370}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4502501508709391337
 GameObject:
@@ -174,7 +174,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 2
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_Interpolate: 1
   m_SleepingMode: 1
@@ -285,7 +285,7 @@ MonoBehaviour:
   input: {fileID: 4502501508709390868}
   move: {x: 0, y: 0}
   aim: {x: 0, y: 0}
-  aimPoint: {fileID: 1945088927}
+  aimPoint: {fileID: 3185439033247327370}
 --- !u!114 &4502501508709390871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,12 +303,12 @@ MonoBehaviour:
   isGrounded: 1
   isClimbing: 0
   moveSpeed: 6
-  jumpVelocity: 13
+  jumpVelocity: 15
   friction: 5
   drag: 0.5
   acc: 5
-  airAcc: 3
-  minVelocity: 0.25
+  airAcc: 4
+  minVelocity: 0.2
   groundCheck: {fileID: 1063123466}
   groundCheckRadius: 0.1
   groundLayer:
@@ -341,18 +341,33 @@ MonoBehaviour:
   throwPoint: {fileID: 1945088927}
   seeds:
   - name: Dandelion
-    icon: {fileID: 0}
+    icons:
+    - {fileID: -680948265, guid: 6e55b2e790f6e044bab070d614b090ff, type: 3}
+    - {fileID: 1145825605, guid: 82cc36c69edd1e84992ac29b9e2fe1a4, type: 3}
+    - {fileID: 679908279, guid: 82cc36c69edd1e84992ac29b9e2fe1a4, type: 3}
+    - {fileID: -1406817335, guid: 82cc36c69edd1e84992ac29b9e2fe1a4, type: 3}
     seed: {fileID: 146130435936245487, guid: 6a79f16efb9e5e743a99d3d87cbef948, type: 3}
     charges: 1
   - name: Mushroom
-    icon: {fileID: 0}
+    icons:
+    - {fileID: 1090745789, guid: 6e55b2e790f6e044bab070d614b090ff, type: 3}
+    - {fileID: 1320372469, guid: 82cc36c69edd1e84992ac29b9e2fe1a4, type: 3}
+    - {fileID: -2113707511, guid: 82cc36c69edd1e84992ac29b9e2fe1a4, type: 3}
+    - {fileID: -1281453164, guid: 82cc36c69edd1e84992ac29b9e2fe1a4, type: 3}
     seed: {fileID: 146130435936245487, guid: f2f7aecad4aeb174395f6e61dc52b798, type: 3}
-    charges: 1
+    charges: 2
   - name: Vine
-    icon: {fileID: 0}
+    icons:
+    - {fileID: 776372510, guid: 6e55b2e790f6e044bab070d614b090ff, type: 3}
+    - {fileID: -1607296639, guid: 82cc36c69edd1e84992ac29b9e2fe1a4, type: 3}
+    - {fileID: -1173727308, guid: 82cc36c69edd1e84992ac29b9e2fe1a4, type: 3}
+    - {fileID: 1511042845, guid: 82cc36c69edd1e84992ac29b9e2fe1a4, type: 3}
     seed: {fileID: 146130435936245487, guid: 6c2b63907f6c8e94b9d0280654874bf4, type: 3}
-    charges: 1
+    charges: 3
   seedIndex: 0
+  aimArm: {fileID: 3185439033247327370}
+  cdTimer: 0
+  cdTime: 0.5
 --- !u!1 &5147706147836511406
 GameObject:
   m_ObjectHideFlags: 0
@@ -10671,7 +10686,6 @@ Transform:
   - {fileID: 3185439033247327370}
   - {fileID: 1063123466}
   - {fileID: 1371289721}
-  - {fileID: 1945088927}
   m_Father: {fileID: 4502501508709390869}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10772,10 +10786,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9179423543985421084}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.251, y: 0.676, z: 0}
+  m_LocalPosition: {x: 0.174, y: 0.676, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1945088927}
   m_Father: {fileID: 8183409150448625758}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
