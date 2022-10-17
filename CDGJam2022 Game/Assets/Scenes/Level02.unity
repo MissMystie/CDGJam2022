@@ -7494,6 +7494,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4502501508709390865, guid: a8298c8e1aa3d9e42bd8d56ed490bcaf, type: 3}
+      propertyPath: seeds.Array.data[1].charges
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4502501508709390865, guid: a8298c8e1aa3d9e42bd8d56ed490bcaf, type: 3}
+      propertyPath: seeds.Array.data[2].charges
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4502501508709390869, guid: a8298c8e1aa3d9e42bd8d56ed490bcaf, type: 3}
       propertyPath: m_RootOrder
       value: 0
