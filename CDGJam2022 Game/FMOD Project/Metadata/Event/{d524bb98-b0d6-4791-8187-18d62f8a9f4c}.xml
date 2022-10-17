@@ -8,7 +8,7 @@
 			<value>water_flowing_sfx</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{488ca71e-dc66-468e-990a-e53dc798b15b}</destination>
@@ -141,9 +141,11 @@
 	<object class="MixerBusEffectChain" id="{afd63477-5a92-448e-bba1-b65e98bb9c49}">
 		<relationship name="effects">
 			<destination>{4a424640-4568-45bd-a7fb-87d3a42c565b}</destination>
+			<destination>{3325321f-8636-4ef5-9725-d225108aaf14}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{d64d7dff-9b20-429a-9320-a265be98b8ce}" />
 	<object class="MixerBusFader" id="{adf8c562-cb62-4639-8e3e-281ade0e266f}" />
 	<object class="MixerBusFader" id="{4a424640-4568-45bd-a7fb-87d3a42c565b}" />
+	<object class="SpatialiserEffect" id="{3325321f-8636-4ef5-9725-d225108aaf14}" />
 </objects>
