@@ -11,12 +11,14 @@ namespace CDGJam
 
         void Start()
         {
-            StartCoroutine(Win());
+            //StartCoroutine(Transition());
         }
 
-        IEnumerator Win()
+        IEnumerator Transition()
         {
             yield return new WaitForSeconds(transitionTime);
+
+            Debug.Log("Hey!");
 
             SceneLoader.LoadScene(nextLevel);
         }

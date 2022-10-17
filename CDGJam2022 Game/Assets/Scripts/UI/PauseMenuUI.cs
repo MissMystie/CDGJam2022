@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 namespace CDGJam
 {
@@ -22,6 +23,12 @@ namespace CDGJam
         public void SettingsBtn()
         {
             UIManager.Instance.OpenSettings();
+        }
+
+        public void RestartBtn()
+        {
+            Scene scene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(scene.name);
         }
 
         public void ControlsBtn()
