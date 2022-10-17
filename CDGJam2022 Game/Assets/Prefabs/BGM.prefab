@@ -78,11 +78,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 206203626
-      Data2: 1315167908
-      Data3: 927590314
-      Data4: -989591322
-    Path: event:/BGM/garden_ambience_dead
+      Data1: -288989901
+      Data2: 1329939052
+      Data3: 1143806357
+      Data4: 674165247
+    Path: event:/SFX/Misc/dead_garden_ambiance_sfx
   Event: 
   PlayEvent: 1
   StopEvent: 2
