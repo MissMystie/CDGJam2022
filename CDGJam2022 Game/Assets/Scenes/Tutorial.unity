@@ -8572,23 +8572,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 658625201, guid: ef4ce808f1a76f045bdb75b3317c2612, type: 3}
       propertyPath: EventReference.Path
-      value: event:/BGM/garden_ambience
+      value: event:/SFX/Misc/garden_ambiance_sfx
       objectReference: {fileID: 0}
     - target: {fileID: 658625201, guid: ef4ce808f1a76f045bdb75b3317c2612, type: 3}
       propertyPath: EventReference.Guid.Data1
-      value: 92806615
+      value: -1163519723
       objectReference: {fileID: 0}
     - target: {fileID: 658625201, guid: ef4ce808f1a76f045bdb75b3317c2612, type: 3}
       propertyPath: EventReference.Guid.Data2
-      value: 1124788796
+      value: 1079062588
       objectReference: {fileID: 0}
     - target: {fileID: 658625201, guid: ef4ce808f1a76f045bdb75b3317c2612, type: 3}
       propertyPath: EventReference.Guid.Data3
-      value: 1329949582
+      value: -25960289
       objectReference: {fileID: 0}
     - target: {fileID: 658625201, guid: ef4ce808f1a76f045bdb75b3317c2612, type: 3}
       propertyPath: EventReference.Guid.Data4
-      value: 1180495852
+      value: 240118975
       objectReference: {fileID: 0}
     - target: {fileID: 7384502191773065633, guid: ef4ce808f1a76f045bdb75b3317c2612, type: 3}
       propertyPath: m_RootOrder

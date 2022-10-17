@@ -11,7 +11,7 @@ namespace CDGJam
 
         void Start()
         {
-            //StartCoroutine(Transition());
+            StartCoroutine(Transition());
         }
 
         IEnumerator Transition()

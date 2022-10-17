@@ -62,6 +62,7 @@ namespace CDGJam
 
         [Header("SFX")]
 
+        public StudioEventEmitter walkingSFX;
         public StudioEventEmitter jumpSFX;
         public StudioEventEmitter climbingSFX;
 
@@ -87,11 +88,16 @@ namespace CDGJam
             isGrounded = (ground != null);
             if (!wasGrounded && isGrounded) OnGrounded();
 
-            if (!isGrounded || rb.velocity.x == 0)
+            if (!isGrounded || (rb.velocity.x < minVelocity && rb.velocity.x > -minVelocity))
             {
-                if (walkingPFX.isPlaying) walkingPFX.Stop(); 
+                walkingSFX.Stop();
+                if (walkingPFX.isPlaying) walkingPFX.Stop();
             }
-            else if (!walkingPFX.isPlaying) walkingPFX.Play();
+            else if (!walkingPFX.isPlaying)
+            {
+                walkingSFX.Play();
+                walkingPFX.Play();
+            }
 
             if (isClimbing && !onClimbableCol)
                 StopClimbing();
