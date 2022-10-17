@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{fe06b352-94d3-4a6c-95b9-ca3f6b3f2c2d}">
+		<property name="color">
+			<value>Green</value>
+		</property>
 		<property name="name">
 			<value>mushroom_bounce_sfx</value>
 		</property>
@@ -8,7 +11,7 @@
 			<value>1</value>
 		</property>
 		<relationship name="folder">
-			<destination>{32caa621-c459-465e-8266-0647d0b1c54f}</destination>
+			<destination>{513dafd9-3684-456e-96b4-6f90f35bea3f}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{864cfdf8-924d-4e65-9d29-13b6c89ab976}</destination>
@@ -64,6 +67,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{7714bace-551d-4f7a-9905-cf3a963fa106}">
+		<relationship name="modulators">
+			<destination>{ca762b83-0662-4a92-ac53-e67b52eb5211}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{4e840b23-7659-440c-af29-336c14bf7cbe}</destination>
 		</relationship>
@@ -91,6 +97,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{4d9c204e-1dc3-4425-a76d-64a223c2d739}" />
+	<object class="RandomizerModulator" id="{ca762b83-0662-4a92-ac53-e67b52eb5211}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="amount">
+			<value>5</value>
+		</property>
+	</object>
 	<object class="MixerBusEffectChain" id="{4e840b23-7659-440c-af29-336c14bf7cbe}">
 		<relationship name="effects">
 			<destination>{06ed2295-22b2-488f-88cf-0837fdfdf98b}</destination>

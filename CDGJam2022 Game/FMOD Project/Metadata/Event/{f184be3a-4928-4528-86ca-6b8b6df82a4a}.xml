@@ -42,7 +42,7 @@
 	</object>
 	<object class="MasterTrack" id="{3e061f97-71b8-4e3e-84d1-de2b729a0043}">
 		<relationship name="modules">
-			<destination>{f75d8e48-3e08-4a67-8558-43a6b35593da}</destination>
+			<destination>{98be6aca-38aa-4479-af3c-a081451e9d1a}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{ab71d5d8-b5a3-4704-9e41-0c2d97fd5695}</destination>
@@ -63,12 +63,13 @@
 	<object class="MarkerTrack" id="{46fb0eb8-527a-4f46-a313-a0378ae6ea27}" />
 	<object class="Timeline" id="{222c4fd1-1d54-4849-bc39-6a6c06c0047d}">
 		<relationship name="modules">
-			<destination>{f75d8e48-3e08-4a67-8558-43a6b35593da}</destination>
+			<destination>{98be6aca-38aa-4479-af3c-a081451e9d1a}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{ab71d5d8-b5a3-4704-9e41-0c2d97fd5695}">
 		<relationship name="modulators">
 			<destination>{0ec4f613-3ec5-4881-a7b8-e5788922fe98}</destination>
+			<destination>{8c7c6157-31c7-4b63-8436-5bbbef7dedce}</destination>
 		</relationship>
 		<relationship name="effectChain">
 			<destination>{d22e7ddd-593c-4acd-abb4-d58d6389547c}</destination>
@@ -80,9 +81,12 @@
 			<destination>{49f5bbe4-cf44-4676-b270-abc9ba99c9b8}</destination>
 		</relationship>
 	</object>
-	<object class="SingleSound" id="{f75d8e48-3e08-4a67-8558-43a6b35593da}">
+	<object class="SingleSound" id="{98be6aca-38aa-4479-af3c-a081451e9d1a}">
 		<property name="length">
-			<value>0.24943750000000001</value>
+			<value>0.49720833333333314</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>0.049999999999999996</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{e0bccb56-1e3b-4c23-a1e5-56b9d452765d}</destination>
@@ -99,7 +103,15 @@
 			<value>pitch</value>
 		</property>
 		<property name="amount">
-			<value>6</value>
+			<value>2.5</value>
+		</property>
+	</object>
+	<object class="RandomizerModulator" id="{8c7c6157-31c7-4b63-8436-5bbbef7dedce}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="amount">
+			<value>3</value>
 		</property>
 	</object>
 	<object class="MixerBusEffectChain" id="{d22e7ddd-593c-4acd-abb4-d58d6389547c}">
