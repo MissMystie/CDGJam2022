@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7590188277774429583}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.75, y: -1, z: 0}
+  m_LocalPosition: {x: 1.882, y: 1.456, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1421,8 +1421,8 @@ ParticleSystem:
         m_NumAlphaKeys: 2
   UVModule:
     serializedVersion: 2
-    enabled: 0
-    mode: 0
+    enabled: 1
+    mode: 1
     timeMode: 0
     fps: 30
     frameOverTime:
@@ -1480,8 +1480,8 @@ ParticleSystem:
         m_RotationOrder: 4
     startFrame:
       serializedVersion: 2
-      minMaxState: 0
-      scalar: 0
+      minMaxState: 3
+      scalar: 0.9999
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -1540,7 +1540,12 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: 0}
+    - sprite: {fileID: -1462609842, guid: 39f9b770cc230d840ae7b63d3d3e0c10, type: 3}
+    - sprite: {fileID: 1226351702, guid: 39f9b770cc230d840ae7b63d3d3e0c10, type: 3}
+    - sprite: {fileID: 139375178, guid: 39f9b770cc230d840ae7b63d3d3e0c10, type: 3}
+    - sprite: {fileID: 1560964560, guid: 39f9b770cc230d840ae7b63d3d3e0c10, type: 3}
+    - sprite: {fileID: -1963739805, guid: 39f9b770cc230d840ae7b63d3d3e0c10, type: 3}
+    - sprite: {fileID: 2118047062, guid: 39f9b770cc230d840ae7b63d3d3e0c10, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
