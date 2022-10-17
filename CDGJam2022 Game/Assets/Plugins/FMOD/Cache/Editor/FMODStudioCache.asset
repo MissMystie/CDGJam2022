@@ -96,10 +96,10 @@ MonoBehaviour:
   Path: FMOD Project/Banks/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638015457296379813
+  lastModified: 638015475531139928
   FileSizes:
   - Name: Desktop
-    Value: 10170560
+    Value: 6280256
   Exists: 1
 --- !u!114 &-7990218480055821105
 MonoBehaviour:
@@ -127,7 +127,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 249
+  Length: 497
 --- !u!114 &-6241163078910725633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -364,7 +364,6 @@ MonoBehaviour:
     Data4: -989591322
   Banks:
   - {fileID: -8478472704635545741}
-  - {fileID: -8478472704635545741}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -441,7 +440,7 @@ MonoBehaviour:
   Path: FMOD Project/Banks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638015457912687815
+  lastModified: 638015475421385478
   FileSizes:
   - Name: Desktop
     Value: 2180
@@ -488,12 +487,14 @@ MonoBehaviour:
   - {fileID: -5428566295359170164}
   - {fileID: 6909527965696112124}
   - {fileID: -3863172195517878054}
+  - {fileID: 7528787694722106288}
+  - {fileID: 4951268982897516184}
   EditorParameters: []
   MasterBanks:
   - {fileID: 312864486258933173}
   StringsBanks:
   - {fileID: -29985722125132434}
-  cacheTime: 638015457912687815
+  cacheTime: 638015475531395154
   cacheVersion: 131593
 --- !u!114 &312864486258933173
 MonoBehaviour:
@@ -510,7 +511,7 @@ MonoBehaviour:
   Path: FMOD Project/Banks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638015457912636811
+  lastModified: 638015475531395154
   FileSizes:
   - Name: Desktop
     Value: 1456384
@@ -530,10 +531,10 @@ MonoBehaviour:
   Path: FMOD Project/Banks/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638015457296499225
+  lastModified: 638015475529808784
   FileSizes:
   - Name: Desktop
-    Value: 517888
+    Value: 4409152
   Exists: 1
 --- !u!114 &1248715294363743652
 MonoBehaviour:
@@ -616,6 +617,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4414
+--- !u!114 &4951268982897516184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Misc/dead_garden_ambiance_sfx
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Misc/dead_garden_ambiance_sfx
+  Guid:
+    Data1: -288989901
+    Data2: 1329939052
+    Data3: 1143806357
+    Data4: 674165247
+  Banks:
+  - {fileID: 1129561156488376291}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 128504
 --- !u!114 &6226743081173914629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -697,6 +725,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &7528787694722106288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Misc/garden_ambiance_sfx
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Misc/garden_ambiance_sfx
+  Guid:
+    Data1: -1163519723
+    Data2: 1079062588
+    Data3: -25960289
+    Data4: 240118975
+  Banks:
+  - {fileID: 1129561156488376291}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 163977
 --- !u!114 &7713997061651664107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -719,7 +774,7 @@ MonoBehaviour:
   - {fileID: 1129561156488376291}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
