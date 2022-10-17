@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace CDGJam
 {
@@ -48,6 +49,7 @@ namespace CDGJam
 
         private void OnDisable()
         {
+            Time.timeScale = 1f;
             controls.Disable();
         }
 
@@ -123,6 +125,12 @@ namespace CDGJam
             Time.timeScale = 1f;
 
             isPaused = false;
+        }
+
+        public void Restart()
+        {
+            Scene scene = SceneManager.GetActiveScene(); 
+            SceneManager.LoadScene(scene.name);
         }
 
         public void OpenSettings()
